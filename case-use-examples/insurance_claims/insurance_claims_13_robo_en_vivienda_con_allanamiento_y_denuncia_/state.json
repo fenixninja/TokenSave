@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Forced balcony window burglary while family was on vacation. Police report #POL-2026-992 with forensic dusting records and itemized stolen electronics invoices ($3,400).",
+    "name": "13. Robo en Vivienda con Allanamiento y Denuncia Policial",
+    "use_case": "insurance_claims",
+    "example_index": 13
+  },
+  "expected_answers": {
+    "claim_type": [
+      5,
+      5,
+      88,
+      2
+    ],
+    "complexity": [
+      20,
+      65,
+      15
+    ],
+    "potential_fraud": 0.08,
+    "missing_info": 0.12
+  },
+  "expected_route": {
+    "routeKey": "standard_adjuster_review",
+    "destination": "Field Adjuster Queue",
+    "rationale": "Moderate complexity (0.95/2.0); scheduled for standard expert inspection."
+  }
+}

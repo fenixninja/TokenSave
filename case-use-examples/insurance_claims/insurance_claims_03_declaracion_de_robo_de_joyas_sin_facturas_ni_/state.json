@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "I am claiming $14,000 for a luxury watch and diamond necklace stolen yesterday from my drawer. I do not have purchase receipts, serial numbers, or a police incident report yet.",
+    "name": "3. Declaración de Robo de Joyas sin Facturas ni Denuncia",
+    "use_case": "insurance_claims",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "claim_type": [
+      5,
+      10,
+      80,
+      5
+    ],
+    "complexity": [
+      10,
+      60,
+      30
+    ],
+    "potential_fraud": 0.88,
+    "missing_info": 0.92
+  },
+  "expected_route": {
+    "routeKey": "siu_fraud_investigation",
+    "destination": "Special Investigation Unit (SIU)",
+    "rationale": "Fraud alert flag active (88% probability). Forensic review required."
+  }
+}

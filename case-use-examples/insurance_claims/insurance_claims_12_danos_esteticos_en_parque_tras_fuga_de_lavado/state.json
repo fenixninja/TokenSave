@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Washing machine hose slipped out during spin cycle, damaging 4 square meters of parquet flooring. Photos and repair invoice ($450) submitted.",
+    "name": "12. Daños Estéticos en Parqué tras Fuga de Lavadora",
+    "use_case": "insurance_claims",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "claim_type": [
+      5,
+      90,
+      3,
+      2
+    ],
+    "complexity": [
+      75,
+      25,
+      0
+    ],
+    "potential_fraud": 0.03,
+    "missing_info": 0.05
+  },
+  "expected_route": {
+    "routeKey": "express_stp_payout",
+    "destination": "Straight-Through Processing (STP Express Payout)",
+    "rationale": "Low complexity (0.25/2.0) with complete documentation qualifies for auto-payout."
+  }
+}

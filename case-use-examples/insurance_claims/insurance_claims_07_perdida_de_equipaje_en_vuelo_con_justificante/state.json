@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Checked luggage lost on flight IB-3140. Airline issued official PIR document confirming luggage permanently unrecoverable after 21 days. Claim amount $850.",
+    "name": "7. Pérdida de Equipaje en Vuelo con Justificante de Aerolínea",
+    "use_case": "insurance_claims",
+    "example_index": 7
+  },
+  "expected_answers": {
+    "claim_type": [
+      5,
+      5,
+      82,
+      8
+    ],
+    "complexity": [
+      88,
+      12,
+      0
+    ],
+    "potential_fraud": 0.04,
+    "missing_info": 0.06
+  },
+  "expected_route": {
+    "routeKey": "express_stp_payout",
+    "destination": "Straight-Through Processing (STP Express Payout)",
+    "rationale": "Low complexity (0.12/2.0) with complete documentation qualifies for auto-payout."
+  }
+}

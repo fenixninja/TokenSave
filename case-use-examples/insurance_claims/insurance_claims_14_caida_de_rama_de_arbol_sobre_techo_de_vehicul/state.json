@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Large branch fell on parked car hood during storm. Municipality report acknowledging fallen tree attached. Repair shop quotation $780.",
+    "name": "14. Caída de Rama de Árbol sobre Techo de Vehículo",
+    "use_case": "insurance_claims",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "claim_type": [
+      88,
+      4,
+      4,
+      4
+    ],
+    "complexity": [
+      80,
+      20,
+      0
+    ],
+    "potential_fraud": 0.02,
+    "missing_info": 0.05
+  },
+  "expected_route": {
+    "routeKey": "express_stp_payout",
+    "destination": "Straight-Through Processing (STP Express Payout)",
+    "rationale": "Low complexity (0.20/2.0) with complete documentation qualifies for auto-payout."
+  }
+}

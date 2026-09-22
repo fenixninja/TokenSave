@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Lost front door keys during commute. Locksmith invoice attached for emergency cylinder replacement ($165). Standard home policy coverage #HOME-441.",
+    "name": "10. Pérdida de Llaves de Vivienda y Cambio de Cerradura",
+    "use_case": "insurance_claims",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "claim_type": [
+      4,
+      90,
+      3,
+      3
+    ],
+    "complexity": [
+      95,
+      5,
+      0
+    ],
+    "potential_fraud": 0.01,
+    "missing_info": 0.02
+  },
+  "expected_route": {
+    "routeKey": "express_stp_payout",
+    "destination": "Straight-Through Processing (STP Express Payout)",
+    "rationale": "Low complexity (0.05/2.0) with complete documentation qualifies for auto-payout."
+  }
+}

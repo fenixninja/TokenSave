@@ -1,0 +1,47 @@
+{
+  "claim_type": {
+    "type": "choice",
+    "instructions": "What primary insurance coverage category does this claim belong to?",
+    "criteria": {
+      "auto_vehicle": "Automobile collision, windshield damage, road accident, or vehicular impact.",
+      "property_home": "Residential water leaks, pipe bursts, electrical damage, storm, or fire.",
+      "theft_burglary": "Stolen property, residential burglary, lost checked luggage, or robbery.",
+      "personal_injury": "Bodily harm, emergency medical hospitalizations, physical therapy, or whiplash."
+    }
+  },
+  "claim_complexity": {
+    "type": "score",
+    "instructions": "What level of technical and financial complexity does this claim exhibit?",
+    "criteria": [
+      "Simple (0.00 - 0.79): Low cost (<$500), standard evidence, straightforward single-party event.",
+      "Moderate (0.80 - 1.49): Medium cost ($500 - $5,000), standard adjuster assessment needed.",
+      "High (1.50 - 2.00): Severe damage (>$5,000), multi-vehicle collision, injury, or catastrophic fire."
+    ]
+  },
+  "potential_fraud_detected": {
+    "type": "noul",
+    "instructions": "Are there red flags, contradictory statements, or suspicious timing suggesting fraud?",
+    "criteria": {
+      "true": "Recent policy inception, inconsistent statements, missing witnesses, or high-value items without proof.",
+      "false": "Consistent, credible reporting with standard repair shop documentation."
+    }
+  },
+  "missing_critical_info": {
+    "type": "noul",
+    "instructions": "Is essential documentation (police report, repair quotes, photos, medical records) absent?",
+    "criteria": {
+      "true": "Critical diagnostic invoices, official police reports, or damage photos are missing.",
+      "false": "All required invoices, estimates, photos, and reports are fully attached."
+    }
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "Which claims processing track should this filing be assigned to?",
+    "criteria": {
+      "siu_fraud_investigation": "Special Investigation Unit (SIU) - Escalated for forensic fraud and claims history audit.",
+      "request_missing_docs": "Automated Document Request - Trigger automated portal notification to collect missing evidence.",
+      "express_stp_payout": "Straight-Through Processing (STP Express Payout) - Low complexity, verified evidence, instant approval.",
+      "standard_adjuster_review": "Field Adjuster Queue - Standard expert assessment for moderate/complex damage."
+    }
+  }
+}

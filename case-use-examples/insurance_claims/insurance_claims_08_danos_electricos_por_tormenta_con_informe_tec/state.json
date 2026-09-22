@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Lightning strike nearby caused power surge destroying Smart TV and refrigerator motherboard. Certified technician report confirming atmospheric discharge attached ($940).",
+    "name": "8. Daños Eléctricos por Tormenta con Informe Técnico Oficial",
+    "use_case": "insurance_claims",
+    "example_index": 8
+  },
+  "expected_answers": {
+    "claim_type": [
+      4,
+      90,
+      3,
+      3
+    ],
+    "complexity": [
+      30,
+      65,
+      5
+    ],
+    "potential_fraud": 0.05,
+    "missing_info": 0.08
+  },
+  "expected_route": {
+    "routeKey": "express_stp_payout",
+    "destination": "Straight-Through Processing (STP Express Payout)",
+    "rationale": "Low complexity (0.75/2.0) with complete documentation qualifies for auto-payout."
+  }
+}

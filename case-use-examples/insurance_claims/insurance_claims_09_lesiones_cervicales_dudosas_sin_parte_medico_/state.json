@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Low-speed bump at red light (5 km/h, no car damage). Passenger claims chronic whiplash and asks for $8,000 pain compensation without initial emergency medical triage records.",
+    "name": "9. Lesiones Cervicales Dudosas sin Parte Médico Inicial",
+    "use_case": "insurance_claims",
+    "example_index": 9
+  },
+  "expected_answers": {
+    "claim_type": [
+      75,
+      5,
+      10,
+      10
+    ],
+    "complexity": [
+      15,
+      55,
+      30
+    ],
+    "potential_fraud": 0.82,
+    "missing_info": 0.88
+  },
+  "expected_route": {
+    "routeKey": "siu_fraud_investigation",
+    "destination": "Special Investigation Unit (SIU)",
+    "rationale": "Fraud alert flag active (82% probability). Forensic review required."
+  }
+}

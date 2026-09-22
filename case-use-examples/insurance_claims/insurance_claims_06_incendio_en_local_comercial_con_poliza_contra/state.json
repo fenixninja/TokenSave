@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Total warehouse fire destroyed all inventory ($180,000). Policy was activated 72 hours ago. Fire department reports suspicious acceleration patterns near electrical panel.",
+    "name": "6. Incendio en Local Comercial con Póliza Contratada hace 3 Días",
+    "use_case": "insurance_claims",
+    "example_index": 6
+  },
+  "expected_answers": {
+    "claim_type": [
+      4,
+      90,
+      3,
+      3
+    ],
+    "complexity": [
+      2,
+      10,
+      88
+    ],
+    "potential_fraud": 0.96,
+    "missing_info": 0.55
+  },
+  "expected_route": {
+    "routeKey": "siu_fraud_investigation",
+    "destination": "Special Investigation Unit (SIU)",
+    "rationale": "Fraud alert flag active (96% probability). Forensic review required."
+  }
+}

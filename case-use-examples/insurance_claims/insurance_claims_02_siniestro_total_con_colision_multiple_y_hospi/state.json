@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Multi-vehicle pileup on interstate highway involving 4 cars and a heavy truck. Driver suffered severe leg fractures requiring ICU surgery. Vehicles totaled; police investigation report pending.",
+    "name": "2. Siniestro Total con Colisión Múltiple y Hospitalización",
+    "use_case": "insurance_claims",
+    "example_index": 2
+  },
+  "expected_answers": {
+    "claim_type": [
+      90,
+      3,
+      4,
+      3
+    ],
+    "complexity": [
+      0,
+      5,
+      95
+    ],
+    "potential_fraud": 0.08,
+    "missing_info": 0.65
+  },
+  "expected_route": {
+    "routeKey": "request_missing_docs",
+    "destination": "Automated Document Request",
+    "rationale": "Missing critical documentation (65% probability)."
+  }
+}

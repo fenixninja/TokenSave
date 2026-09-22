@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Insured filed third vehicle total loss claim in 9 months, each time reporting single-vehicle runoff on rural roads at night with no witnesses.",
+    "name": "11. Múltiples Siniestros Declarados en Corto Plazo (Patrón)",
+    "use_case": "insurance_claims",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "claim_type": [
+      85,
+      5,
+      5,
+      5
+    ],
+    "complexity": [
+      10,
+      40,
+      50
+    ],
+    "potential_fraud": 0.94,
+    "missing_info": 0.4
+  },
+  "expected_route": {
+    "routeKey": "siu_fraud_investigation",
+    "destination": "Special Investigation Unit (SIU)",
+    "rationale": "Fraud alert flag active (94% probability). Forensic review required."
+  }
+}

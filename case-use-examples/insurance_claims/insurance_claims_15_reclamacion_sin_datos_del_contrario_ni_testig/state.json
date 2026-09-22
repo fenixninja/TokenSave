@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Side mirror knocked off on highway by an unknown merging truck that fled the scene. No license plate, no dashcam footage, no witnesses.",
+    "name": "15. Reclamación sin Datos del Contrario ni Testigos en Autovía",
+    "use_case": "insurance_claims",
+    "example_index": 15
+  },
+  "expected_answers": {
+    "claim_type": [
+      85,
+      5,
+      5,
+      5
+    ],
+    "complexity": [
+      40,
+      50,
+      10
+    ],
+    "potential_fraud": 0.25,
+    "missing_info": 0.75
+  },
+  "expected_route": {
+    "routeKey": "request_missing_docs",
+    "destination": "Automated Document Request",
+    "rationale": "Missing critical documentation (75% probability)."
+  }
+}

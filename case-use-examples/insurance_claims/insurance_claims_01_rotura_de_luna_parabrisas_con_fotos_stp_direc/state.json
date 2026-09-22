@@ -1,0 +1,26 @@
+{
+  "state": {
+    "text": "Windshield crack on passenger side caused by gravel on highway A-6. Photos of damage and certified repair shop estimate of $240 attached. Policy #AUTO-8921.",
+    "name": "1. Rotura de Luna Parabrisas con Fotos (STP Directo)"
+  },
+  "expected_answers": {
+    "claim_type": [
+      85,
+      5,
+      5,
+      5
+    ],
+    "complexity": [
+      92,
+      8,
+      0
+    ],
+    "potential_fraud": 0.03,
+    "missing_info": 0.05
+  },
+  "expected_route": {
+    "routeKey": "express_stp_payout",
+    "destination": "Straight-Through Processing (STP Express Payout)",
+    "rationale": "Low complexity (0.08/2.0) with complete documentation qualifies for auto-payout."
+  }
+}
