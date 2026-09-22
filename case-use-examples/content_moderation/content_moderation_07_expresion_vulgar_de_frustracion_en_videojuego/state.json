@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Dammit! That final boss fight is ridiculously hard and totally unfair! Lost 3 hours of progress, so frustrating!",
+    "name": "7. Expresión Vulgar de Frustración en Videojuego sin Ataque Personal",
+    "use_case": "content_moderation",
+    "example_index": 7
+  },
+  "expected_answers": {
+    "harm_category": [
+      30,
+      10,
+      5,
+      55
+    ],
+    "harm_severity": [
+      70,
+      28,
+      2
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Recent research in Nature Climate Change indicates that agroforestry techniques could sequester up to 2.3 gigatons of CO2 annually by 2035.",
+    "name": "10. Publicación Científica sobre Mitigación del Cambio Climático",
+    "use_case": "content_moderation",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "harm_category": [
+      1,
+      1,
+      1,
+      97
+    ],
+    "harm_severity": [
+      99,
+      1,
+      0
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}

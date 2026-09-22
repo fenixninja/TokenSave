@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "You are the absolute worst FIFA player in history, I destroyed you 5-0 again! Pay up the bet pizza tomorrow!",
+    "name": "13. Comentario con Ironía Benigna entre Amigos de Toda la Vida",
+    "use_case": "content_moderation",
+    "example_index": 13
+  },
+  "expected_answers": {
+    "harm_category": [
+      25,
+      5,
+      2,
+      68
+    ],
+    "harm_severity": [
+      85,
+      14,
+      1
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}

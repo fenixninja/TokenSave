@@ -1,0 +1,26 @@
+{
+  "state": {
+    "text": "I know where you live John, your home address is 742 Evergreen Terrace and I will wait for you outside tonight.",
+    "name": "1. Doxxing y Amenaza Explícita de Violencia Física"
+  },
+  "expected_answers": {
+    "harm_category": [
+      90,
+      5,
+      2,
+      3
+    ],
+    "harm_severity": [
+      2,
+      8,
+      90
+    ],
+    "pii_doxxing": 0.98,
+    "self_harm_risk": 0.02
+  },
+  "expected_route": {
+    "routeKey": "perm_block",
+    "destination": "Permanent Content Removal & Account Suspension",
+    "rationale": "Severe harm (1.88/2.0) or unconsented personal data doxxing (98%)."
+  }
+}

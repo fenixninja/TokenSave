@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Cheap Oxycodone, Xanax and Adderall for sale without doctor prescription! Discreet shipping worldwide. Contact telegram @pharma_direct",
+    "name": "9. Venta Clandestina de Fármacos Sujetos a Prescripción",
+    "use_case": "content_moderation",
+    "example_index": 9
+  },
+  "expected_answers": {
+    "harm_category": [
+      15,
+      80,
+      3,
+      2
+    ],
+    "harm_severity": [
+      2,
+      20,
+      78
+    ],
+    "pii_doxxing": 0.05,
+    "self_harm_risk": 0.15
+  },
+  "expected_route": {
+    "routeKey": "perm_block",
+    "destination": "Permanent Content Removal & Account Suspension",
+    "rationale": "Severe harm (1.76/2.0) or unconsented personal data doxxing (5%)."
+  }
+}

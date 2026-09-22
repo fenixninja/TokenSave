@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Here is the private phone number and high school of that 15-year old kid: +34 612 345 678. Everyone call and spam him non-stop!",
+    "name": "3. Difusión No Consentida de Teléfono y Datos de un Menor",
+    "use_case": "content_moderation",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "harm_category": [
+      85,
+      10,
+      2,
+      3
+    ],
+    "harm_severity": [
+      0,
+      10,
+      90
+    ],
+    "pii_doxxing": 0.99,
+    "self_harm_risk": 0.02
+  },
+  "expected_route": {
+    "routeKey": "perm_block",
+    "destination": "Permanent Content Removal & Account Suspension",
+    "rationale": "Severe harm (1.90/2.0) or unconsented personal data doxxing (99%)."
+  }
+}

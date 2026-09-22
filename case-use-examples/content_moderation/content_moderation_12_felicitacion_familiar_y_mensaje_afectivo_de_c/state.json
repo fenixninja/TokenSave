@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Happy 60th birthday to the best mom in the world! Wishing you health, happiness, and another year full of laughter and joy!",
+    "name": "12. Felicitación Familiar y Mensaje Afectivo de Cumpleaños",
+    "use_case": "content_moderation",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "harm_category": [
+      1,
+      1,
+      1,
+      97
+    ],
+    "harm_severity": [
+      99,
+      1,
+      0
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}

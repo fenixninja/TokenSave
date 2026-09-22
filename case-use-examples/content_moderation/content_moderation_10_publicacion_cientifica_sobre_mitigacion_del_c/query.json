@@ -1,0 +1,47 @@
+{
+  "harm_category": {
+    "type": "choice",
+    "instructions": "What primary violation of community trust and safety guidelines does this content exhibit?",
+    "criteria": {
+      "harassment_abuse": "Targeted harassment, bullying, violent threats, or hate speech.",
+      "doxxing_pii": "Non-consensual disclosure of private addresses, phone numbers, or identity data.",
+      "self_harm_risk": "Suicide ideation, encouragement of self-injury, or eating disorder promotion.",
+      "benign_acceptable": "Constructive discussion, legitimate debate, benign humor, or creative writing."
+    }
+  },
+  "harm_severity": {
+    "type": "score",
+    "instructions": "What severity rating applies to the potential real-world harm of this content?",
+    "criteria": [
+      "None / Negligible: Fully compliant with community standards.",
+      "Moderate: Heated rhetoric, borderline profanity, or mild incivility requiring warning.",
+      "Severe: Imminent physical threat, extreme violence, child endangerment, or severe doxxing."
+    ]
+  },
+  "pii_doxxing_detected": {
+    "type": "noul",
+    "instructions": "Does the post expose unconsented personal identifiable information (phone, physical address, ID)?",
+    "criteria": {
+      "true": "Exposes private residential addresses, phone numbers, or sensitive identity records.",
+      "false": "Contains no private personal records or doxxing payloads."
+    }
+  },
+  "self_harm_risk": {
+    "type": "noul",
+    "instructions": "Does this post indicate urgent suicide ideation or intention to cause self-harm?",
+    "criteria": {
+      "true": "Explicit expression of self-harm or suicidal intent requiring emergency crisis support.",
+      "false": "No indication of self-harm or crisis ideation."
+    }
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "What moderation enforcement action should be triggered by the trust and safety system?",
+    "criteria": {
+      "crisis_intervention": "Crisis Protocol Activation - Display 24/7 helpline resources and notify emergency trust team.",
+      "perm_block": "Permanent Content Removal & Account Suspension - Immediate deletion of severe doxxing or threat.",
+      "warn_review": "Content Warning & Human Moderation Queue - Apply advisory flag and queue for manual review.",
+      "approved": "Post Approved - Content meets community guidelines and is published to public feeds."
+    }
+  }
+}

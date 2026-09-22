@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "I cannot take this unbearable pain any longer. Tonight I am saying goodbye to everyone. Thank you for trying to help me, but this is my final message.",
+    "name": "6. Mensaje de Ideación Suicida y Desesperación Extrema",
+    "use_case": "content_moderation",
+    "example_index": 6
+  },
+  "expected_answers": {
+    "harm_category": [
+      5,
+      5,
+      88,
+      2
+    ],
+    "harm_severity": [
+      0,
+      5,
+      95
+    ],
+    "pii_doxxing": 0.02,
+    "self_harm_risk": 0.99
+  },
+  "expected_route": {
+    "routeKey": "crisis_intervention",
+    "destination": "Crisis Protocol Activation",
+    "rationale": "Urgent self-harm ideation detected (99% probability)."
+  }
+}

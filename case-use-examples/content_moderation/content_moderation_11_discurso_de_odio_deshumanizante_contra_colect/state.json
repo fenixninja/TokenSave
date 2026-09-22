@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Those immigrants are subhuman parasites poisoning our country and they all deserve to be rounded up and thrown into the sea.",
+    "name": "11. Discurso de Odio Deshumanizante contra Colectivo Vulnerable",
+    "use_case": "content_moderation",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "harm_category": [
+      94,
+      3,
+      1,
+      2
+    ],
+    "harm_severity": [
+      0,
+      2,
+      98
+    ],
+    "pii_doxxing": 0.02,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "perm_block",
+    "destination": "Permanent Content Removal & Account Suspension",
+    "rationale": "Severe harm (1.98/2.0) or unconsented personal data doxxing (2%)."
+  }
+}

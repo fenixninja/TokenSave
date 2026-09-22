@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "How can I resolve CORS errors when making fetch requests from localhost:3000 to an Express.js backend running on localhost:8080?",
+    "name": "15. Pregunta Técnica sobre Desarrollo Web en Stack Overflow",
+    "use_case": "content_moderation",
+    "example_index": 15
+  },
+  "expected_answers": {
+    "harm_category": [
+      1,
+      1,
+      1,
+      97
+    ],
+    "harm_severity": [
+      99,
+      1,
+      0
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}

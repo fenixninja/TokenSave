@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "INVESTMENT SECRET: Guaranteed 300% weekly return on Bitcoin algorithmic trading platform! Only 50 spots left, send deposit to wallet now!",
+    "name": "14. Estafa de Rendimiento Financiero Fraudulento (Ponzi)",
+    "use_case": "content_moderation",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "harm_category": [
+      5,
+      90,
+      2,
+      3
+    ],
+    "harm_severity": [
+      10,
+      75,
+      15
+    ],
+    "pii_doxxing": 0.05,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "warn_review",
+    "destination": "Content Warning & Human Moderation Queue",
+    "rationale": "Moderate violation (1.05/2.0); queued for human moderator review."
+  }
+}

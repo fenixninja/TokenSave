@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "I strongly disagree with the proposed tax reform policy. The economic data shows it could increase inflation by 1.8%, though I respect your perspective on infrastructure funding.",
+    "name": "2. Discusión Política Apasionada pero Respetuosa",
+    "use_case": "content_moderation",
+    "example_index": 2
+  },
+  "expected_answers": {
+    "harm_category": [
+      2,
+      2,
+      2,
+      94
+    ],
+    "harm_severity": [
+      98,
+      2,
+      0
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}

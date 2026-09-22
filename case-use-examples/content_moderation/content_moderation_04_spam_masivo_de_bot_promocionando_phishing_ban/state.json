@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "URGENT BANK NOTIFICATION: Your Santander account is locked. Click here immediately to verify identity and claim 500 EUR: http://fake-login-santander-secure.xyz",
+    "name": "4. Spam Masivo de Bot Promocionando Phishing Bancario",
+    "use_case": "content_moderation",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "harm_category": [
+      5,
+      88,
+      3,
+      4
+    ],
+    "harm_severity": [
+      10,
+      80,
+      10
+    ],
+    "pii_doxxing": 0.15,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "warn_review",
+    "destination": "Content Warning & Human Moderation Queue",
+    "rationale": "Moderate violation (1.00/2.0); queued for human moderator review."
+  }
+}

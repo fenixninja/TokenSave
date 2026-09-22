@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "For the best Spanish tortilla de patatas, fry the sliced potatoes and onions slowly on medium heat until golden, and leave the eggs slightly runny inside!",
+    "name": "5. Receta Culinaria Casera con Consejos de Cocina",
+    "use_case": "content_moderation",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "harm_category": [
+      1,
+      1,
+      1,
+      97
+    ],
+    "harm_severity": [
+      99,
+      1,
+      0
+    ],
+    "pii_doxxing": 0.01,
+    "self_harm_risk": 0.01
+  },
+  "expected_route": {
+    "routeKey": "approved",
+    "destination": "Post Approved",
+    "rationale": "Content is compliant with community guidelines."
+  }
+}
