@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Critical crash in checkout payment gateway when entering CVV. 100% reproducible with steps: 1) Add item to cart, 2) Enter Visa card details, 3) Click Pay -> throws HTTP 500 error. All checkout users are completely blocked.",
+    "name": "2. Bug Crítico Bloqueante en Pasarela de Pago con Repro",
+    "use_case": "support_fanout",
+    "example_index": 2
+  },
+  "expected_answers": {
+    "category": [
+      88,
+      4,
+      4,
+      4
+    ],
+    "bug_severity": [
+      2,
+      8,
+      90
+    ],
+    "has_reproducible_steps": 0.95,
+    "refund_requested": 0.05,
+    "frustration": [
+      20,
+      60,
+      20
+    ]
+  },
+  "expected_route": {
+    "routeKey": "eng_crit",
+    "destination": "Tier 3 Engineering (Critical Bug / Immediate Triage)",
+    "rationale": "Bug severity (1.88/2.0) or repro steps (95%) require immediate technical escalation."
+  }
+}

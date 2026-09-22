@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Hello! Could you please consider adding an export to CSV button on the analytics dashboard? It would save our marketing team several hours every week. Keep up the good work!",
+    "name": "3. Feature Request Amable (Exportar a CSV)",
+    "use_case": "support_fanout",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "category": [
+      4,
+      4,
+      88,
+      4
+    ],
+    "bug_severity": [
+      92,
+      8,
+      0
+    ],
+    "has_reproducible_steps": 0.05,
+    "refund_requested": 0.02,
+    "frustration": [
+      92,
+      8,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "product_roadmap",
+    "destination": "Product Management (Roadmap & Voice of Customer)",
+    "rationale": "Feature enhancement request archived for product roadmap review."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Invoice #INV-2026-882 issued yesterday contains an incorrect corporate tax identification number (NIF). Could you please correct the tax details and re-issue the invoice PDF?",
+    "name": "11. Factura errónea con número de CIF/NIF incorrecto",
+    "use_case": "support_fanout",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "category": [
+      2,
+      92,
+      3,
+      3
+    ],
+    "bug_severity": [
+      95,
+      5,
+      0
+    ],
+    "has_reproducible_steps": 0.1,
+    "refund_requested": 0.05,
+    "frustration": [
+      75,
+      20,
+      5
+    ]
+  },
+  "expected_route": {
+    "routeKey": "billing_general",
+    "destination": "Customer Care (Billing Support)",
+    "rationale": "General billing or subscription inquiry without refund demand."
+  }
+}

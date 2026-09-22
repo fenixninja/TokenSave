@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "What are the exact rate limits for the `/v1/embeddings` endpoint? We are planning a batch backfill of 200,000 documents tonight and want to ensure we don't trigger 429 throttling.",
+    "name": "15. Consulta sobre límites de API de rate-limiting por minuto",
+    "use_case": "support_fanout",
+    "example_index": 15
+  },
+  "expected_answers": {
+    "category": [
+      10,
+      15,
+      15,
+      60
+    ],
+    "bug_severity": [
+      95,
+      5,
+      0
+    ],
+    "has_reproducible_steps": 0.05,
+    "refund_requested": 0.01,
+    "frustration": [
+      90,
+      10,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "account_auth",
+    "destination": "Automated Identity & Access Management",
+    "rationale": "Credential reset, access restoration, or 2FA assistance."
+  }
+}

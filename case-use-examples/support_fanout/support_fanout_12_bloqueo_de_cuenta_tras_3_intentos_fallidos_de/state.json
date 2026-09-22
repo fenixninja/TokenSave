@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "My account says 'Temporarily suspended due to multiple failed login attempts'. I have already used the password recovery link but I never received the confirmation email.",
+    "name": "12. Bloqueo de cuenta tras 3 intentos fallidos de contraseña",
+    "use_case": "support_fanout",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "category": [
+      6,
+      4,
+      4,
+      86
+    ],
+    "bug_severity": [
+      15,
+      75,
+      10
+    ],
+    "has_reproducible_steps": 0.65,
+    "refund_requested": 0.01,
+    "frustration": [
+      20,
+      55,
+      25
+    ]
+  },
+  "expected_route": {
+    "routeKey": "account_auth",
+    "destination": "Automated Identity & Access Management",
+    "rationale": "Credential reset, access restoration, or 2FA assistance."
+  }
+}

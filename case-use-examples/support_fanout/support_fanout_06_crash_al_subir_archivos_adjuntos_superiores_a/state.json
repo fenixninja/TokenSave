@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Whenever we upload a PDF contract over 10MB in the client portal, the entire browser tab freezes with an out-of-memory error. Workaround: splitting PDF into multiple 5MB chunks works.",
+    "name": "6. Crash al subir archivos adjuntos superiores a 10MB",
+    "use_case": "support_fanout",
+    "example_index": 6
+  },
+  "expected_answers": {
+    "category": [
+      82,
+      6,
+      6,
+      6
+    ],
+    "bug_severity": [
+      5,
+      85,
+      10
+    ],
+    "has_reproducible_steps": 0.88,
+    "refund_requested": 0.02,
+    "frustration": [
+      25,
+      60,
+      15
+    ]
+  },
+  "expected_route": {
+    "routeKey": "eng_crit",
+    "destination": "Tier 3 Engineering (Critical Bug / Immediate Triage)",
+    "rationale": "Bug severity (1.05/2.0) or repro steps (88%) require immediate technical escalation."
+  }
+}

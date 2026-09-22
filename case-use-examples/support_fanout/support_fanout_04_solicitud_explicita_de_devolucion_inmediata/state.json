@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "I was charged $120 for an annual renewal that I did not authorize. I am demanding an immediate full refund back to my card. Please reverse the transaction today.",
+    "name": "4. Solicitud Explícita de Devolución Inmediata",
+    "use_case": "support_fanout",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "category": [
+      3,
+      90,
+      4,
+      3
+    ],
+    "bug_severity": [
+      95,
+      5,
+      0
+    ],
+    "has_reproducible_steps": 0.02,
+    "refund_requested": 0.98,
+    "frustration": [
+      10,
+      45,
+      45
+    ]
+  },
+  "expected_route": {
+    "routeKey": "billing_refund",
+    "destination": "Finance / Priority Refunds",
+    "rationale": "Explicit refund request confirmed (98% probability)."
+  }
+}

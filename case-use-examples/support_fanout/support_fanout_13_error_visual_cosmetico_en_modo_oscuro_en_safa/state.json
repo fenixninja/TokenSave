@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "In Safari 18 on macOS, the dropdown menus in dark mode have dark gray text on a black background, making it slightly hard to read. Works fine in Chrome. Minor issue.",
+    "name": "13. Error visual cosmético en modo oscuro en Safari",
+    "use_case": "support_fanout",
+    "example_index": 13
+  },
+  "expected_answers": {
+    "category": [
+      85,
+      3,
+      7,
+      5
+    ],
+    "bug_severity": [
+      90,
+      10,
+      0
+    ],
+    "has_reproducible_steps": 0.85,
+    "refund_requested": 0.01,
+    "frustration": [
+      85,
+      15,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "eng_crit",
+    "destination": "Tier 3 Engineering (Critical Bug / Immediate Triage)",
+    "rationale": "Bug severity (0.10/2.0) or repro steps (85%) require immediate technical escalation."
+  }
+}

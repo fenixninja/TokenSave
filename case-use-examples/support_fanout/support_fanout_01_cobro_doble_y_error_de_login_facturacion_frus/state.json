@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Hi, I placed an order (#98423) last Thursday and was charged twice. I also can't log in after the site update, and adding Apple Pay would be really helpful. This is getting frustrating.",
+    "name": "1. Cobro doble y error de login (Facturación + Frustración)",
+    "use_case": "support_fanout",
+    "example_index": 1
+  },
+  "expected_answers": {
+    "category": [
+      18,
+      56,
+      12,
+      14
+    ],
+    "bug_severity": [
+      20,
+      60,
+      20
+    ],
+    "has_reproducible_steps": 0.15,
+    "refund_requested": 0.78,
+    "frustration": [
+      15,
+      65,
+      20
+    ]
+  },
+  "expected_route": {
+    "routeKey": "billing_refund",
+    "destination": "Finance / Priority Refunds",
+    "rationale": "Explicit refund request confirmed (78% probability)."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Under Article 17 of GDPR (Right to Erasure), I request the complete and permanent deletion of my account, profile records, and all associated personal data from your database.",
+    "name": "8. Solicitud de eliminación de cuenta GDPR / Privacidad",
+    "use_case": "support_fanout",
+    "example_index": 8
+  },
+  "expected_answers": {
+    "category": [
+      4,
+      6,
+      4,
+      86
+    ],
+    "bug_severity": [
+      95,
+      5,
+      0
+    ],
+    "has_reproducible_steps": 0.02,
+    "refund_requested": 0.05,
+    "frustration": [
+      70,
+      25,
+      5
+    ]
+  },
+  "expected_route": {
+    "routeKey": "account_auth",
+    "destination": "Automated Identity & Access Management",
+    "rationale": "Credential reset, access restoration, or 2FA assistance."
+  }
+}

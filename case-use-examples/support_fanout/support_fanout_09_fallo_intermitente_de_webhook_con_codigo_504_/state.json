@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Our integration webhooks are intermittently dropping payloads between 14:00 and 16:00 UTC with 504 Gateway Timeout. Re-delivering manually succeeds about 60% of the time.",
+    "name": "9. Fallo intermitente de webhook con código 504 Gateway Timeout",
+    "use_case": "support_fanout",
+    "example_index": 9
+  },
+  "expected_answers": {
+    "category": [
+      84,
+      5,
+      5,
+      6
+    ],
+    "bug_severity": [
+      10,
+      75,
+      15
+    ],
+    "has_reproducible_steps": 0.75,
+    "refund_requested": 0.01,
+    "frustration": [
+      30,
+      55,
+      15
+    ]
+  },
+  "expected_route": {
+    "routeKey": "eng_crit",
+    "destination": "Tier 3 Engineering (Critical Bug / Immediate Triage)",
+    "rationale": "Bug severity (1.05/2.0) or repro steps (75%) require immediate technical escalation."
+  }
+}

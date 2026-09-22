@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "I changed my phone number and now the SMS 2FA verification code doesn't arrive. I am locked out of my company administrative account. Please reset my 2FA authentication method.",
+    "name": "5. Problema de Autenticación 2FA en Dispositivo Móvil",
+    "use_case": "support_fanout",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "category": [
+      5,
+      5,
+      5,
+      85
+    ],
+    "bug_severity": [
+      20,
+      70,
+      10
+    ],
+    "has_reproducible_steps": 0.4,
+    "refund_requested": 0.01,
+    "frustration": [
+      30,
+      50,
+      20
+    ]
+  },
+  "expected_route": {
+    "routeKey": "account_auth",
+    "destination": "Automated Identity & Access Management",
+    "rationale": "Credential reset, access restoration, or 2FA assistance."
+  }
+}

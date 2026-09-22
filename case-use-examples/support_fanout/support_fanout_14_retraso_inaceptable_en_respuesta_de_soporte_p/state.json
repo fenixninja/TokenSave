@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "I opened ticket #84122 FOUR DAYS AGO and nobody has replied. Our entire production pipeline has been stalled and we are losing thousands of dollars every hour. This is totally unacceptable!",
+    "name": "14. Retraso inaceptable en respuesta de soporte previo (Muy enojado)",
+    "use_case": "support_fanout",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "category": [
+      25,
+      25,
+      10,
+      40
+    ],
+    "bug_severity": [
+      15,
+      45,
+      40
+    ],
+    "has_reproducible_steps": 0.2,
+    "refund_requested": 0.45,
+    "frustration": [
+      2,
+      8,
+      90
+    ]
+  },
+  "expected_route": {
+    "routeKey": "account_auth",
+    "destination": "Automated Identity & Access Management",
+    "rationale": "Credential reset, access restoration, or 2FA assistance."
+  }
+}

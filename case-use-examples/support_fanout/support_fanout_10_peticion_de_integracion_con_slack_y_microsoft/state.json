@@ -1,0 +1,33 @@
+{
+  "state": {
+    "text": "Our workspace uses Slack for internal alerts and MS Teams with external clients. Having native notification bots for both would be a game-changer for our workflow. Is this planned on your roadmap?",
+    "name": "10. Petición de integración con Slack y Microsoft Teams",
+    "use_case": "support_fanout",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "category": [
+      2,
+      3,
+      91,
+      4
+    ],
+    "bug_severity": [
+      95,
+      5,
+      0
+    ],
+    "has_reproducible_steps": 0.01,
+    "refund_requested": 0.01,
+    "frustration": [
+      90,
+      10,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "product_roadmap",
+    "destination": "Product Management (Roadmap & Voice of Customer)",
+    "rationale": "Feature enhancement request archived for product roadmap review."
+  }
+}

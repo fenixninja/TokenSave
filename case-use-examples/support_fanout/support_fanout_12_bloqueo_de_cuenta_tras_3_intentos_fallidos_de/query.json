@@ -1,0 +1,58 @@
+{
+  "ticket_category": {
+    "type": "choice",
+    "instructions": "What is the primary operational category of the incoming customer support ticket?",
+    "criteria": {
+      "bug_report": "Technical software bugs, system crashes, functional defects, or broken platform features.",
+      "billing": "Inquiries regarding invoices, credit card charges, subscriptions, pricing, or refunds.",
+      "feature_request": "Suggestions for new product capabilities, workflow enhancements, or general feedback.",
+      "account_auth": "Account access difficulties, credential resets, or two-factor authentication support."
+    }
+  },
+  "bug_severity_rating": {
+    "type": "score",
+    "instructions": "What technical severity level applies to the reported issue based on functional impact?",
+    "criteria": [
+      "Low severity (0.00 - 0.99): Minor visual or cosmetic issue without direct operational impact.",
+      "Moderate severity (1.00 - 1.49): Impairs secondary workflows, but viable workarounds exist.",
+      "Critical severity (1.50 - 2.00): Complete workflow outage or system blocker; immediate triage required."
+    ]
+  },
+  "has_reproducible_steps": {
+    "type": "noul",
+    "instructions": "Does the ticket supply explicit step-by-step reproduction instructions, logs, or evidence?",
+    "criteria": {
+      "true": "Provides clear, deterministic steps, error logs, or screenshots to reproduce the defect.",
+      "false": "Lacks reproduction steps or provides insufficient diagnostic details to replicate the issue."
+    }
+  },
+  "refund_requested": {
+    "type": "noul",
+    "instructions": "Is the customer explicitly requesting a financial refund, credit, or charge reversal?",
+    "criteria": {
+      "true": "The user formally demands money back, refund reversal, or billing compensation.",
+      "false": "Informational billing inquiry or complaint without an explicit demand for reimbursement."
+    }
+  },
+  "customer_frustration": {
+    "type": "score",
+    "instructions": "What level of emotional frustration or hostility does the customer express?",
+    "criteria": [
+      "Calm, polite, or constructive communication.",
+      "Noticeably frustrated or exasperated, but professional and civil.",
+      "Severely angry, aggressive, threatening legal action, or using hostile language."
+    ]
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "Which resolution queue or team should this ticket be dispatched to based on the evaluation?",
+    "criteria": {
+      "eng_crit": "Tier 3 Engineering (Critical Bug / Immediate Triage) - High severity or verified reproduction steps.",
+      "eng_backlog": "Engineering Backlog (Minor Defect / Standard Queue) - Moderate severity with available workaround.",
+      "billing_refund": "Finance / Priority Refunds - Confirmed explicit demand for transaction reimbursement.",
+      "billing_general": "Customer Care (Billing Support) - General invoice, payment method, or subscription inquiry.",
+      "product_roadmap": "Product Management (Roadmap & Voice of Customer) - Feature requests and enhancements.",
+      "account_auth": "Automated Identity & Access Management - Account lockout, password reset, or 2FA assistance."
+    }
+  }
+}
