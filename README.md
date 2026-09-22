@@ -55,3 +55,18 @@ $$p_i = \frac{\exp\left(\frac{s_i - \max(\mathbf{s})}{T}\right)}{\sum_{j=1}^N \e
 
 **Test 7**
 - [ ] Primitive Score with normalitation
+
+**Test 8**
+- [ ] Primitive UMAP with normalitation
+
+# To-DO
+
+## FIX
+- [ ] ui.js  ``isTrue`` no working.
+- [ ] primitive.js NOUL No  working
+
+## FEATURE
+- [ ] Add upload json
+- [ ] Export json
+- [ ] Add undo
+- [ ] Add redo 
