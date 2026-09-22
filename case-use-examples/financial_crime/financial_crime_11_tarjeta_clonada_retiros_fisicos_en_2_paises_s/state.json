@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Point-of-sale card transaction in Madrid followed 12 minutes later by a physical ATM cash withdrawal in Bangkok ($1,200). Impossible travel time.",
+    "name": "11. Tarjeta Clonada: Retiros Físicos en 2 Países Simultáneos",
+    "use_case": "financial_crime",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "alert_type": [
+      90,
+      5,
+      2,
+      3
+    ],
+    "risk_severity": [
+      2,
+      10,
+      88
+    ],
+    "is_pep_exposed": 0.01,
+    "immediate_block_needed": 0.99
+  },
+  "expected_route": {
+    "routeKey": "freeze_sar_filing",
+    "destination": "Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": "Critical AML exposure: Risk (1.86/2.0), Block prob (99%)."
+  }
+}

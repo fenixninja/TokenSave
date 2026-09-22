@@ -1,0 +1,26 @@
+{
+  "state": {
+    "text": "Four consecutive cash deposits of $9,950 within 48 hours at different ATM branches by an account with zero declared monthly income.",
+    "Path": "1. Transacciones Fraccionadas de $9,950 en 48h (Structuring / Pitufeo)"
+  },
+  "expected_answers": {
+    "alert_type": [
+      85,
+      5,
+      5,
+      5
+    ],
+    "risk_severity": [
+      5,
+      15,
+      80
+    ],
+    "is_pep_exposed": 0.05,
+    "immediate_block_needed": 0.85
+  },
+  "expected_route": {
+    "routeKey": "`Path`freeze_sar_filing",
+    "destination": "`Path` Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": " `Path` Critical AML exposure: Risk (1.75/2.0), Block prob (85%)."
+  }
+}

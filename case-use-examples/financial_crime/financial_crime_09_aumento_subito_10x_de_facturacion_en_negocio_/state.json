@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Small seasonal café suddenly reports $450,000 in monthly cash deposits in mid-winter, representing 10x historical volume without extra staff.",
+    "name": "9. Aumento Súbito 10x de Facturación en Negocio de Hostelería",
+    "use_case": "financial_crime",
+    "example_index": 9
+  },
+  "expected_answers": {
+    "alert_type": [
+      80,
+      10,
+      5,
+      5
+    ],
+    "risk_severity": [
+      10,
+      60,
+      30
+    ],
+    "is_pep_exposed": 0.05,
+    "immediate_block_needed": 0.6
+  },
+  "expected_route": {
+    "routeKey": "enhanced_due_diligence",
+    "destination": "Enhanced Due Diligence (EDD) Review",
+    "rationale": "Elevated risk profile (1.20/2.0) or PEP involvement (5%)."
+  }
+}

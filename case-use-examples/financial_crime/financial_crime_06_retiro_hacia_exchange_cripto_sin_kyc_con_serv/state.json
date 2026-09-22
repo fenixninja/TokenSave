@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Wire transfer of $80,000 sent to a peer-to-peer crypto exchange flagged for utilizing coin mixer services (Tornado Cash obfuscation).",
+    "name": "6. Retiro hacia Exchange Cripto sin KYC con Servicio Mixer",
+    "use_case": "financial_crime",
+    "example_index": 6
+  },
+  "expected_answers": {
+    "alert_type": [
+      65,
+      25,
+      5,
+      5
+    ],
+    "risk_severity": [
+      5,
+      20,
+      75
+    ],
+    "is_pep_exposed": 0.05,
+    "immediate_block_needed": 0.88
+  },
+  "expected_route": {
+    "routeKey": "freeze_sar_filing",
+    "destination": "Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": "Critical AML exposure: Risk (1.70/2.0), Block prob (88%)."
+  }
+}

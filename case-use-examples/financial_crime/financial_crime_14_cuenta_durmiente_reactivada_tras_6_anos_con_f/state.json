@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Dormant savings account with zero activity since 2020 suddenly receives $320,000 international SWIFT wire followed by immediate transfer to real estate escrow.",
+    "name": "14. Cuenta Durmiente Reactivada tras 6 Años con Fondos Grandes",
+    "use_case": "financial_crime",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "alert_type": [
+      40,
+      50,
+      5,
+      5
+    ],
+    "risk_severity": [
+      5,
+      45,
+      50
+    ],
+    "is_pep_exposed": 0.15,
+    "immediate_block_needed": 0.75
+  },
+  "expected_route": {
+    "routeKey": "freeze_sar_filing",
+    "destination": "Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": "Critical AML exposure: Risk (1.45/2.0), Block prob (75%)."
+  }
+}

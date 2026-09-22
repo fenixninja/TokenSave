@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Student checking account receiving 58 incoming Bizum/P2P transfers of $100-$300 in 3 days, followed by immediate cash withdrawal at casino ATM.",
+    "name": "5. Cuenta Personal Recibiendo 50 Micro-Cobros P2P Rápidos",
+    "use_case": "financial_crime",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "alert_type": [
+      75,
+      10,
+      10,
+      5
+    ],
+    "risk_severity": [
+      10,
+      65,
+      25
+    ],
+    "is_pep_exposed": 0.02,
+    "immediate_block_needed": 0.7
+  },
+  "expected_route": {
+    "routeKey": "freeze_sar_filing",
+    "destination": "Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": "Critical AML exposure: Risk (1.15/2.0), Block prob (70%)."
+  }
+}

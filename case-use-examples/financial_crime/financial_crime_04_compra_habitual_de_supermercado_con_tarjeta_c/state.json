@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "In-person contactless debit card payment of $42.50 at local Carrefour supermarket in customer's home city.",
+    "name": "4. Compra Habitual de Supermercado con Tarjeta Chip y PIN",
+    "use_case": "financial_crime",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "alert_type": [
+      2,
+      2,
+      2,
+      94
+    ],
+    "risk_severity": [
+      99,
+      1,
+      0
+    ],
+    "is_pep_exposed": 0.01,
+    "immediate_block_needed": 0.01
+  },
+  "expected_route": {
+    "routeKey": "authorized_clear",
+    "destination": "Transaction Authorized (Nominal)",
+    "rationale": "Transaction falls within legitimate nominal behavior."
+  }
+}

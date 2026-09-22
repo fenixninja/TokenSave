@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Outgoing wire transfer of $250,000 to a newly opened correspondent bank account in a FATF-blacklisted jurisdiction without trade shipping documentation.",
+    "name": "3. Transferencia a Jurisdicción de Alto Riesgo Sancionada por GAFI",
+    "use_case": "financial_crime",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "alert_type": [
+      10,
+      80,
+      5,
+      5
+    ],
+    "risk_severity": [
+      0,
+      5,
+      95
+    ],
+    "is_pep_exposed": 0.4,
+    "immediate_block_needed": 0.95
+  },
+  "expected_route": {
+    "routeKey": "freeze_sar_filing",
+    "destination": "Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": "Critical AML exposure: Risk (1.95/2.0), Block prob (95%)."
+  }
+}

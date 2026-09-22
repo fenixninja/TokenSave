@@ -1,0 +1,46 @@
+{
+  "aml_typology": {
+    "type": "choice",
+    "instructions": "What specific financial crime or money laundering pattern is suspected?",
+    "criteria": {
+      "structuring_smurfing": "Cash structuring below reporting thresholds ($10k) across multiple branches.",
+      "sanctions_aml": "Wires to FATF-blacklisted jurisdictions, sanctioned entities, or mixer services.",
+      "identity_theft_card_fraud": "Card cloning, synthetic identity creation, takeover, or impossible travel.",
+      "benign_nominal": "Legitimate everyday commercial operations, payroll runs, or personal spending."
+    }
+  },
+  "aml_risk_severity": {
+    "type": "score",
+    "instructions": "What level of regulatory, criminal, and financial risk does this transaction represent?",
+    "criteria": [
+      "Low risk: Expected, nominal customer transactional profile.",
+      "Medium risk: Unexplained volume increase or unusual counterparty requiring compliance review.",
+      "Critical risk: Severe money laundering indicators requiring immediate asset freeze and regulatory escalation."
+    ]
+  },
+  "is_pep_exposed": {
+    "type": "noul",
+    "instructions": "Does the transaction involve a Politically Exposed Person (PEP), diplomat, or foreign official?",
+    "criteria": {
+      "true": "A PEP, senior government official, or close immediate family associate is identified.",
+      "false": "Standard retail or commercial customer with no political exposure flags."
+    }
+  },
+  "immediate_block_needed": {
+    "type": "noul",
+    "instructions": "Does this transaction demand an immediate precautionary freeze to prevent capital flight?",
+    "criteria": {
+      "true": "Immediate freeze required to prevent irreversible movement of illicit funds.",
+      "false": "Precautionary block not required; post-transaction reporting is sufficient."
+    }
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "What compliance intervention should be triggered according to AML regulations?",
+    "criteria": {
+      "freeze_sar_filing": "Immediate Precautionary Asset Freeze & SAR Filing - Regulatory filing to FinCEN/SEPBLAC.",
+      "enhanced_due_diligence": "Enhanced Due Diligence (EDD) Review - Comprehensive compliance officer investigation.",
+      "authorized_clear": "Transaction Authorized (Nominal) - Cleared by rule engine with zero suspicious flags."
+    }
+  }
+}

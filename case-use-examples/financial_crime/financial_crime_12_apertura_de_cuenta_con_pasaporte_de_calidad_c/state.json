@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Online onboarding session where automated biometric facial scan failed liveness test 4 times and passport hologram shows signs of digital tampering.",
+    "name": "12. Apertura de Cuenta con Pasaporte de Calidad Cuestionable",
+    "use_case": "financial_crime",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "alert_type": [
+      70,
+      20,
+      5,
+      5
+    ],
+    "risk_severity": [
+      10,
+      70,
+      20
+    ],
+    "is_pep_exposed": 0.05,
+    "immediate_block_needed": 0.85
+  },
+  "expected_route": {
+    "routeKey": "freeze_sar_filing",
+    "destination": "Immediate Precautionary Asset Freeze & SAR Filing",
+    "rationale": "Critical AML exposure: Risk (1.10/2.0), Block prob (85%)."
+  }
+}
