@@ -8,7 +8,7 @@
  * - UMAP 2D projection
  */
 
-import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.2";
+import { pipeline} from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.2";
 import { UMAP } from "https://cdn.jsdelivr.net/npm/umap-js@1.4.0/+esm";
 
 // Enable browser cache for models
