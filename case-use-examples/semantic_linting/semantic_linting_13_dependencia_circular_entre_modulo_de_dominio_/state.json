@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "# domain/models.py\nfrom infrastructure.email_smtp_client import send_welcome_email\nclass User:\n    def create(self): send_welcome_email(self.email)",
+    "name": "13. Dependencia Circular entre Módulo de Dominio e Infraestructura",
+    "use_case": "semantic_linting",
+    "example_index": 13
+  },
+  "expected_answers": {
+    "violation_type": [
+      85,
+      10,
+      2,
+      3
+    ],
+    "maintainability_impact": [
+      10,
+      65,
+      25
+    ],
+    "security_flaw_detected": 0.05,
+    "blocks_merge_ci": 0.7
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (5%) or merge blocker detected."
+  }
+}

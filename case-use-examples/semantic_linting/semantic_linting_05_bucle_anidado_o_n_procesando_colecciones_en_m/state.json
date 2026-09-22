@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "for order in all_orders:\n    for item in order.items:\n        for supplier in all_suppliers:\n            if supplier.id == item.supplier_id: supplier.matches.append(order)",
+    "name": "5. Bucle Anidado O(N³) Procesando Colecciones en Memoria",
+    "use_case": "semantic_linting",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "violation_type": [
+      5,
+      88,
+      3,
+      4
+    ],
+    "maintainability_impact": [
+      5,
+      20,
+      75
+    ],
+    "security_flaw_detected": 0.05,
+    "blocks_merge_ci": 0.75
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (5%) or merge blocker detected."
+  }
+}

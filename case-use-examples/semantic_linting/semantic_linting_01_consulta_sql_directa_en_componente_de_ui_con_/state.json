@@ -1,0 +1,26 @@
+{
+  "state": {
+    "text": "import sqlite3\ndef render_user_profile_component(user_id):\n    conn = sqlite3.connect('prod.db')\n    row = conn.execute(f'SELECT * FROM users WHERE id = {user_id}').fetchone()\n    return f'<div><h1>{row[1]}</h1></div>'",
+    "name": "1. Consulta SQL Directa en Componente de UI con Inyección (Grave)"
+  },
+  "expected_answers": {
+    "violation_type": [
+      85,
+      5,
+      8,
+      2
+    ],
+    "maintainability_impact": [
+      0,
+      5,
+      95
+    ],
+    "security_flaw_detected": 0.99,
+    "blocks_merge_ci": 0.99
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (99%) or merge blocker detected."
+  }
+}

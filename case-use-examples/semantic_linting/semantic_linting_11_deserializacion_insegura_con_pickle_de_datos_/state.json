@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "import pickle\ndef load_user_session(cookie_data):\n    # Remote Code Execution hazard\n    return pickle.loads(base64.b64decode(cookie_data))",
+    "name": "11. Deserialización Insegura con Pickle de Datos No Confiables",
+    "use_case": "semantic_linting",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "violation_type": [
+      5,
+      5,
+      88,
+      2
+    ],
+    "maintainability_impact": [
+      0,
+      5,
+      95
+    ],
+    "security_flaw_detected": 0.99,
+    "blocks_merge_ci": 0.99
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (99%) or merge blocker detected."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "@app.get('/api/users/{id}')\ndef get_user(id: int):\n    return db.query(UserOrmModel).filter_by(id=id).first()  # Leaks password_hash and salt to JSON",
+    "name": "10. Exposición Directa de Entidad de Base de Datos en Endpoint REST",
+    "use_case": "semantic_linting",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "violation_type": [
+      80,
+      5,
+      10,
+      5
+    ],
+    "maintainability_impact": [
+      10,
+      45,
+      45
+    ],
+    "security_flaw_detected": 0.85,
+    "blocks_merge_ci": 0.9
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (85%) or merge blocker detected."
+  }
+}

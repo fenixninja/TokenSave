@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "def execute_billing_workflow(user, plan, coupon, country, payment_type):\n    # 400 lines of entangled if/elif/else statements mutating 12 state variables\n    if plan == 'pro': ...",
+    "name": "8. Método Monolítico Dios con 25 Condiciones If Anidadas",
+    "use_case": "semantic_linting",
+    "example_index": 8
+  },
+  "expected_answers": {
+    "violation_type": [
+      10,
+      85,
+      2,
+      3
+    ],
+    "maintainability_impact": [
+      2,
+      18,
+      80
+    ],
+    "security_flaw_detected": 0.1,
+    "blocks_merge_ci": 0.8
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (10%) or merge blocker detected."
+  }
+}

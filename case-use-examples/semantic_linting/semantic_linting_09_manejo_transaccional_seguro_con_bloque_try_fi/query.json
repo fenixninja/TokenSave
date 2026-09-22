@@ -1,0 +1,46 @@
+{
+  "violation_type": {
+    "type": "choice",
+    "instructions": "What architectural defect or anti-pattern is identified in this code snippet?",
+    "criteria": {
+      "god_class_coupling": "Monolithic God Class violating Single Responsibility with high cyclomatic complexity.",
+      "unhandled_promise_leak": "Unhandled async promise rejection, connection pool exhaustion, or memory leak.",
+      "security_flaw": "SQL injection, hardcoded cryptographic secrets, or insecure deserialization.",
+      "clean_modular_code": "Well-structured, modular, clean code adhering to established design patterns."
+    }
+  },
+  "maintainability_impact": {
+    "type": "score",
+    "instructions": "What is the technical debt and maintenance degradation impact of this code?",
+    "criteria": [
+      "Clean code (0.00 - 0.79): Negligible technical debt with comprehensive testability.",
+      "Moderate debt (0.80 - 1.49): Structural code smell requiring targeted refactoring.",
+      "Critical hazard (1.50 - 2.00): Severe architectural fragility, memory leak, or production crash risk."
+    ]
+  },
+  "security_flaw_detected": {
+    "type": "noul",
+    "instructions": "Does this code introduce an exploitable vulnerability (injection, secret exposure, RCE)?",
+    "criteria": {
+      "true": "Contains an exploitable vulnerability, unescaped dynamic query, or exposed private key.",
+      "false": "Follows secure coding standards with zero detected security vulnerabilities."
+    }
+  },
+  "blocks_merge_ci": {
+    "type": "noul",
+    "instructions": "Should the CI automated gate fail the build and block merging this Pull Request?",
+    "criteria": {
+      "true": "Critical severity or security flaw requires blocking the merge until fixed.",
+      "false": "Code passes automated criteria or only triggers non-blocking advisory suggestions."
+    }
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "What CI/CD pipeline action should be executed for this code review?",
+    "criteria": {
+      "ci_pipeline_block_fail": "Block Pull Request (CI Fail) - Merge blocked due to critical security or memory hazard.",
+      "ci_advisory_warning_debt": "Advisory Refactoring Warning - Non-blocking PR comment advising technical debt cleanup.",
+      "ci_clean_pass_merge": "Pass Pull Request (CI Green) - Code passes automated review and is approved for merge."
+    }
+  }
+}

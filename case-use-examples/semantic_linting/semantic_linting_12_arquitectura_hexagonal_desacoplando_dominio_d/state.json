@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "class RegisterUserUseCase:\n    def __init__(self, user_gateway: UserGatewayPort):\n        self.user_gateway = user_gateway\n    def execute(self, command: RegisterUserCommand) -> UserId: ...",
+    "name": "12. Arquitectura Hexagonal Desacoplando Dominio de Framework",
+    "use_case": "semantic_linting",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "violation_type": [
+      2,
+      2,
+      2,
+      94
+    ],
+    "maintainability_impact": [
+      98,
+      2,
+      0
+    ],
+    "security_flaw_detected": 0.01,
+    "blocks_merge_ci": 0.01
+  },
+  "expected_route": {
+    "routeKey": "ci_clean_pass_merge",
+    "destination": "Pass Pull Request (CI Green)",
+    "rationale": "Clean architecture and modular code approved for merge."
+  }
+}

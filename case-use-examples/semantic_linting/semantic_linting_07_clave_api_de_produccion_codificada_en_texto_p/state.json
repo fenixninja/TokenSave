@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "STRIPE_SECRET_KEY = 'sk_live_51M08F894129481204812048912'\nAWS_ACCESS_KEY_ID = 'AKIAIOSFODNN7EXAMPLE'\ndef charge_card(amount):\n    client = Stripe(STRIPE_SECRET_KEY)",
+    "name": "7. Clave API de Producción Codificada en Texto Plano (Hardcoded)",
+    "use_case": "semantic_linting",
+    "example_index": 7
+  },
+  "expected_answers": {
+    "violation_type": [
+      5,
+      5,
+      88,
+      2
+    ],
+    "maintainability_impact": [
+      0,
+      5,
+      95
+    ],
+    "security_flaw_detected": 0.99,
+    "blocks_merge_ci": 0.99
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (99%) or merge blocker detected."
+  }
+}

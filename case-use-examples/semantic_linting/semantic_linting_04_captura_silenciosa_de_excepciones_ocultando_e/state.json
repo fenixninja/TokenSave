@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "try:\n    process_credit_card_transaction(order)\nexcept Exception:\n    pass  # Silently ignoring failure, transaction state left corrupt",
+    "name": "4. Captura Silenciosa de Excepciones Ocultando el Stack Trace",
+    "use_case": "semantic_linting",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "violation_type": [
+      15,
+      75,
+      5,
+      5
+    ],
+    "maintainability_impact": [
+      5,
+      20,
+      75
+    ],
+    "security_flaw_detected": 0.5,
+    "blocks_merge_ci": 0.85
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (50%) or merge blocker detected."
+  }
+}

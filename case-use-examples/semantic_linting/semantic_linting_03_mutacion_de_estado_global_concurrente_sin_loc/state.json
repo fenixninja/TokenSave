@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "global_active_sessions = {}\ndef handle_login(user_id):\n    # Concurrent thread race hazard\n    global_active_sessions[user_id] = global_active_sessions.get(user_id, 0) + 1",
+    "name": "3. Mutación de Estado Global Concurrente sin Lock (Race Condition)",
+    "use_case": "semantic_linting",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "violation_type": [
+      10,
+      80,
+      5,
+      5
+    ],
+    "maintainability_impact": [
+      5,
+      25,
+      70
+    ],
+    "security_flaw_detected": 0.7,
+    "blocks_merge_ci": 0.88
+  },
+  "expected_route": {
+    "routeKey": "ci_pipeline_block_fail",
+    "destination": "Block Pull Request (CI Fail)",
+    "rationale": "Critical security vulnerability (70%) or merge blocker detected."
+  }
+}
