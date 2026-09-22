@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "What is the capital of Australia and will it rain tomorrow in Sydney?",
+    "name": "4. Comando Fuera de Dominio (Incertidumbre Alta / Ruido)",
+    "use_case": "banking_confidence",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "intent": [
+      10,
+      15,
+      75
+    ]
+  },
+  "expected_route": {
+    "routeKey": "human_escalation",
+    "destination": "Escalate to Human Support Specialist",
+    "rationale": "Low confidence (0.63) or out-of-scope intent; automated actions suspended."
+  }
+}

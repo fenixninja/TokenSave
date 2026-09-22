@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "What were my last three card transactions this week and how much did I spend at the pharmacy?",
+    "name": "6. Consulta de últimos movimientos y compras recientes",
+    "use_case": "banking_confidence",
+    "example_index": 6
+  },
+  "expected_answers": {
+    "intent": [
+      88,
+      4,
+      8
+    ]
+  },
+  "expected_route": {
+    "routeKey": "display_balance",
+    "destination": "Auto-Display Balance",
+    "rationale": "Low-stakes read-only balance inquiry; confidence 0.82 is safe for direct display."
+  }
+}

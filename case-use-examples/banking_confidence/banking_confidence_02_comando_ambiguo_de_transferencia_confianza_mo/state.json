@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "I might want to approve that payment to John, but let me check if that transfer is still pending.",
+    "name": "2. Comando Ambiguo de Transferencia (Confianza Moderada)",
+    "use_case": "banking_confidence",
+    "example_index": 2
+  },
+  "expected_answers": {
+    "intent": [
+      12,
+      75,
+      13
+    ]
+  },
+  "expected_route": {
+    "routeKey": "confirm_transfer_user",
+    "destination": "Require User Verbal/2FA Confirmation",
+    "rationale": "Transfer operation with moderate confidence (0.63); requires verbal/2FA verification."
+  }
+}

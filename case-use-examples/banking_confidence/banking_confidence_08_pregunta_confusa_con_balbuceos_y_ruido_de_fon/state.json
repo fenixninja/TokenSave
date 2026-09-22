@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Yeah, uh, maybe send... wait, how much was that electric bill again? Don't send yet.",
+    "name": "8. Pregunta confusa con balbuceos y ruido de fondo",
+    "use_case": "banking_confidence",
+    "example_index": 8
+  },
+  "expected_answers": {
+    "intent": [
+      45,
+      35,
+      20
+    ]
+  },
+  "expected_route": {
+    "routeKey": "human_escalation",
+    "destination": "Escalate to Human Support Specialist",
+    "rationale": "Low confidence (0.18) or out-of-scope intent; automated actions suspended."
+  }
+}

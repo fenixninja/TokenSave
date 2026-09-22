@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "I received the SMS security code 892110 and I explicitly authorize the payment of 85 euros to Iberdrola.",
+    "name": "11. Confirmación explícita con código SMS de 6 dígitos",
+    "use_case": "banking_confidence",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "intent": [
+      2,
+      96,
+      2
+    ]
+  },
+  "expected_route": {
+    "routeKey": "approve_transfer_direct",
+    "destination": "Direct Auto-Approval",
+    "rationale": "High-stakes fund transfer backed by exceptional confidence (0.94 >= 0.85)."
+  }
+}

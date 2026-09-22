@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Ummm, like, well, you know, the bank thingy... check that stuff over there please.",
+    "name": "13. Frase ininteligible o murmullo sin intención clara",
+    "use_case": "banking_confidence",
+    "example_index": 13
+  },
+  "expected_answers": {
+    "intent": [
+      35,
+      30,
+      35
+    ]
+  },
+  "expected_route": {
+    "routeKey": "human_escalation",
+    "destination": "Escalate to Human Support Specialist",
+    "rationale": "Low confidence (0.02) or out-of-scope intent; automated actions suspended."
+  }
+}

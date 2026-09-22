@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "There is an unknown maintenance fee of $12 on my statement that I never agreed to. I want to dispute this charge.",
+    "name": "15. Reclamación y disputa de comisión no reconocida",
+    "use_case": "banking_confidence",
+    "example_index": 15
+  },
+  "expected_answers": {
+    "intent": [
+      20,
+      10,
+      70
+    ]
+  },
+  "expected_route": {
+    "routeKey": "human_escalation",
+    "destination": "Escalate to Human Support Specialist",
+    "rationale": "Low confidence (0.55) or out-of-scope intent; automated actions suspended."
+  }
+}

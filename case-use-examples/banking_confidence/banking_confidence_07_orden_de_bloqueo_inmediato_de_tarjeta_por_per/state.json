@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "I lost my debit card at the restaurant an hour ago, please freeze my card immediately so no one uses it.",
+    "name": "7. Orden de bloqueo inmediato de tarjeta por pérdida",
+    "use_case": "banking_confidence",
+    "example_index": 7
+  },
+  "expected_answers": {
+    "intent": [
+      15,
+      10,
+      75
+    ]
+  },
+  "expected_route": {
+    "routeKey": "human_escalation",
+    "destination": "Escalate to Human Support Specialist",
+    "rationale": "Low confidence (0.63) or out-of-scope intent; automated actions suspended."
+  }
+}

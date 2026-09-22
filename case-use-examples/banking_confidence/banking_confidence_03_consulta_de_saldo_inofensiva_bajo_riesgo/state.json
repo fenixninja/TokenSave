@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Can you tell me how much money I have left in my checking account right now?",
+    "name": "3. Consulta de Saldo Inofensiva (Bajo Riesgo)",
+    "use_case": "banking_confidence",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "intent": [
+      94,
+      3,
+      3
+    ]
+  },
+  "expected_route": {
+    "routeKey": "display_balance",
+    "destination": "Auto-Display Balance",
+    "rationale": "Low-stakes read-only balance inquiry; confidence 0.91 is safe for direct display."
+  }
+}

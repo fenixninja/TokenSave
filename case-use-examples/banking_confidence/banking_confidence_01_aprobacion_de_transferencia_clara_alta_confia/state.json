@@ -1,0 +1,18 @@
+{
+  "state": {
+    "text": "Please authorize and send the pending transfer of $450 to my landlord immediately.",
+    "name": "1. Aprobación de Transferencia Clara (Alta Confianza)"
+  },
+  "expected_answers": {
+    "intent": [
+      4,
+      93,
+      3
+    ]
+  },
+  "expected_route": {
+    "routeKey": "approve_transfer_direct",
+    "destination": "Direct Auto-Approval",
+    "rationale": "High-stakes fund transfer backed by exceptional confidence (0.90 >= 0.85)."
+  }
+}

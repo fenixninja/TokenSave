@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "I would like to apply to increase the credit limit on my Visa Platinum card from $3,000 to $6,000.",
+    "name": "12. Solicitud de aumento de límite de crédito de tarjeta",
+    "use_case": "banking_confidence",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "intent": [
+      15,
+      20,
+      65
+    ]
+  },
+  "expected_route": {
+    "routeKey": "human_escalation",
+    "destination": "Escalate to Human Support Specialist",
+    "rationale": "Low confidence (0.48) or out-of-scope intent; automated actions suspended."
+  }
+}

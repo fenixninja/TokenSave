@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Approve the automated recurring payment of $17.99 for my monthly Netflix family subscription.",
+    "name": "14. Pago recurrente de suscripción de streaming",
+    "use_case": "banking_confidence",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "intent": [
+      6,
+      90,
+      4
+    ]
+  },
+  "expected_route": {
+    "routeKey": "approve_transfer_direct",
+    "destination": "Direct Auto-Approval",
+    "rationale": "High-stakes fund transfer backed by exceptional confidence (0.85 >= 0.85)."
+  }
+}

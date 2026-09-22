@@ -1,0 +1,29 @@
+{
+  "user_intent": {
+    "type": "choice",
+    "instructions": "What primary financial action or service is the customer requesting?",
+    "criteria": {
+      "check_balance": "Check current checking, savings, or investment account balance and recent transactions.",
+      "approve_transfer": "Authorize and execute a pending wire or fund transfer to a payee.",
+      "other": "Ambiguous command, out-of-scope query, general inquiry, or noise."
+    }
+  },
+  "high_stakes_risk": {
+    "type": "noul",
+    "instructions": "Does this request involve irreversible fund movement or high monetary exposure?",
+    "criteria": {
+      "true": "Involves executing an outgoing financial payment, wire, or transfer.",
+      "false": "Read-only balance inspection or low-stakes informational inquiry."
+    }
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "Which execution or gating path should be triggered based on calibrated confidence thresholds?",
+    "criteria": {
+      "display_balance": "Auto-Display Balance - Low-stakes read-only operation executed immediately.",
+      "approve_transfer_direct": "Direct Auto-Approval - High-stakes transfer with exceptional confidence (>= 0.85).",
+      "confirm_transfer_user": "Require User Verbal/2FA Confirmation - High-stakes transfer with moderate confidence (0.60 - 0.85).",
+      "human_escalation": "Escalate to Human Support Specialist - Low confidence (< 0.60) or ambiguous intent."
+    }
+  }
+}

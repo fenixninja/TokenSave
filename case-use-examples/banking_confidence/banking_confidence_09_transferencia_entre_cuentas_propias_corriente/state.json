@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Move two hundred dollars from checking to my high-yield savings account right now.",
+    "name": "9. Transferencia entre cuentas propias (Corriente a Ahorros)",
+    "use_case": "banking_confidence",
+    "example_index": 9
+  },
+  "expected_answers": {
+    "intent": [
+      5,
+      92,
+      3
+    ]
+  },
+  "expected_route": {
+    "routeKey": "approve_transfer_direct",
+    "destination": "Direct Auto-Approval",
+    "rationale": "High-stakes fund transfer backed by exceptional confidence (0.88 >= 0.85)."
+  }
+}

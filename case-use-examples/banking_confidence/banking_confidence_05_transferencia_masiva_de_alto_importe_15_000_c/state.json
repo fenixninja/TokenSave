@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Transfer fifteen thousand dollars from my main checking account to dealer escrow account #44810 for car purchase.",
+    "name": "5. Transferencia masiva de alto importe ($15,000 coche)",
+    "use_case": "banking_confidence",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "intent": [
+      2,
+      95,
+      3
+    ]
+  },
+  "expected_route": {
+    "routeKey": "approve_transfer_direct",
+    "destination": "Direct Auto-Approval",
+    "rationale": "High-stakes fund transfer backed by exceptional confidence (0.92 >= 0.85)."
+  }
+}

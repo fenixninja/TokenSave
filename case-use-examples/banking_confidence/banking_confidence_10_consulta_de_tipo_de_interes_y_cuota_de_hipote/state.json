@@ -1,0 +1,20 @@
+{
+  "state": {
+    "text": "Can you display the current interest rate and remaining balance on my 30-year fixed home mortgage?",
+    "name": "10. Consulta de tipo de interés y cuota de hipoteca",
+    "use_case": "banking_confidence",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "intent": [
+      82,
+      5,
+      13
+    ]
+  },
+  "expected_route": {
+    "routeKey": "display_balance",
+    "destination": "Auto-Display Balance",
+    "rationale": "Low-stakes read-only balance inquiry; confidence 0.73 is safe for direct display."
+  }
+}
