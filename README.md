@@ -70,3 +70,27 @@ $$p_i = \frac{\exp\left(\frac{s_i - \max(\mathbf{s})}{T}\right)}{\sum_{j=1}^N \e
 - [ ] Export json
 - [ ] Add undo
 - [ ] Add redo 
+
+# Benchmarks
+## Directory Structure
+
+```
+case-use-examples/
+├── support_fanout/
+│   ├── support_fanout_01_cobro_doble_y_error_de_login/
+│   │   ├── state.json     # Input text, preset metadata & calibrated ground-truth answers
+│   │   └── query.json     # Embeding System One typed schema (Choice, Score, Noul, Final Route)
+│   ├── support_fanout_02_bug_critico_bloqueante/
+│   │   ├── state.json
+│   │   └── query.json
+│   └── ... (15 examples)
+├── composite_resume/      # 15 examples (Senior IC vs Eng Manager)
+├── banking_confidence/    # 15 examples (Voice banking & confidence gating)
+├── robot_telemetry/       # 15 examples (Kinematics & Bellman MDP)
+├── llm_guardrails/        # 15 examples (Prompt injection, safety & jailbreaks)
+├── insurance_claims/      # 15 examples (STP claims triage & fraud detection)
+├── financial_crime/       # 15 examples (AML, structuring & sanctions)
+├── content_moderation/    # 15 examples (Trust & Safety, doxxing & harassment)
+├── legal_compliance/      # 15 examples (Contract audit, liability & GDPR)
+└── semantic_linting/      # 15 examples (Architectural debt & CI blockers)
+```
