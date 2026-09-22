@@ -94,3 +94,12 @@ case-use-examples/
 ├── legal_compliance/      # 15 examples (Contract audit, liability & GDPR)
 └── semantic_linting/      # 15 examples (Architectural debt & CI blockers)
 ```
+
+### AreLit/PhisnhNCips
+### p50 Classifier
+### p95 Classifier
+### Math NLI
+### Who. 
+[Dataset attribuition](https://github.com/tokentrim/jev-agent-failure-benchmark)
+### When
+### What
