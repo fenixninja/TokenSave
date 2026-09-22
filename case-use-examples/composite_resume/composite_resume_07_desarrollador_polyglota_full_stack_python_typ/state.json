@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Versatile full-stack engineer who jumped between writing Rust microservices, Node.js GraphQL gateways, Python ML inferencing pipelines, and Next.js React user interfaces across 4 high-growth startups.",
+    "name": "7. Desarrollador Polyglota Full-Stack (Python, TypeScript, Rust, Go)",
+    "use_case": "composite_resume",
+    "example_index": 7
+  },
+  "expected_answers": {
+    "python_depth": [
+      5,
+      15,
+      35,
+      35,
+      10
+    ],
+    "team_leadership": [
+      30,
+      40,
+      20,
+      10,
+      0
+    ],
+    "system_design": [
+      10,
+      20,
+      40,
+      25,
+      5
+    ],
+    "generalist": [
+      0,
+      2,
+      10,
+      38,
+      50
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (53.6%); requires hiring manager assessment."
+  }
+}

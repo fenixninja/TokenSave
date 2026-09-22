@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Senior Data Engineer with 7 years orchestrating terabyte-scale data lakes with PySpark, Apache Airflow and dbt. Optimized distributed SQL queries, built real-time Kafka streaming feeds and trained ML feature stores in Python.",
+    "name": "8. Data Engineer Senior (PySpark, Pipelines ETL, Airflow, Modelos)",
+    "use_case": "composite_resume",
+    "example_index": 8
+  },
+  "expected_answers": {
+    "python_depth": [
+      0,
+      5,
+      15,
+      45,
+      35
+    ],
+    "team_leadership": [
+      25,
+      45,
+      20,
+      10,
+      0
+    ],
+    "system_design": [
+      5,
+      15,
+      35,
+      35,
+      10
+    ],
+    "generalist": [
+      15,
+      30,
+      35,
+      15,
+      5
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (61.0%); requires hiring manager assessment."
+  }
+}

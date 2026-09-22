@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Tech Lead of a 6-person core services team. Balances 50% hands-on coding in Python/AsyncIO with sprint planning, RFC architectural reviews, and 1-on-1 career development for team engineers.",
+    "name": "6. Tech Lead con foco equilibrado (50% líder, 50% IC)",
+    "use_case": "composite_resume",
+    "example_index": 6
+  },
+  "expected_answers": {
+    "python_depth": [
+      2,
+      5,
+      20,
+      45,
+      28
+    ],
+    "team_leadership": [
+      5,
+      15,
+      45,
+      30,
+      5
+    ],
+    "system_design": [
+      5,
+      15,
+      35,
+      35,
+      10
+    ],
+    "generalist": [
+      10,
+      25,
+      40,
+      20,
+      5
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (62.2%); requires hiring manager assessment."
+  }
+}

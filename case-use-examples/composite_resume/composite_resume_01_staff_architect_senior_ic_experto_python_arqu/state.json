@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Staff Distributed Systems Engineer with 9 years of deep Python (asyncio, C extensions, PyTorch internals), architected event-driven microservices processing 50k req/sec across multi-region Kubernetes. Minimal direct reports, focused on technical design and mentorship.",
+    "name": "1. Staff Architect / Senior IC (Experto Python & Arquitectura)",
+    "use_case": "composite_resume",
+    "example_index": 1
+  },
+  "expected_answers": {
+    "python_depth": [
+      0,
+      2,
+      8,
+      30,
+      60
+    ],
+    "team_leadership": [
+      25,
+      45,
+      20,
+      8,
+      2
+    ],
+    "system_design": [
+      0,
+      3,
+      12,
+      35,
+      50
+    ],
+    "generalist": [
+      15,
+      35,
+      30,
+      15,
+      5
+    ]
+  },
+  "expected_route": {
+    "routeKey": "onsite_loop",
+    "destination": "Full Technical Onsite Interview Loop",
+    "rationale": "Strong technical score (74.9%) qualifies candidate for onsite panels."
+  }
+}

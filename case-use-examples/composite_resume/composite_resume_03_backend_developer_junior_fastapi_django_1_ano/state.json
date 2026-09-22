@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Junior backend developer with 1 year of professional experience building REST APIs with FastAPI, Django and PostgreSQL. Focused on writing unit tests and bug fixes. No system architecture or leadership experience.",
+    "name": "3. Backend Developer Junior (FastAPI & Django, 1 año)",
+    "use_case": "composite_resume",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "python_depth": [
+      5,
+      25,
+      55,
+      15,
+      0
+    ],
+    "team_leadership": [
+      85,
+      12,
+      3,
+      0,
+      0
+    ],
+    "system_design": [
+      60,
+      30,
+      10,
+      0,
+      0
+    ],
+    "generalist": [
+      30,
+      50,
+      15,
+      5,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "archive_future",
+    "destination": "Archive for Future Opportunities",
+    "rationale": "Composite score (25.8%) does not meet senior requirement threshold."
+  }
+}

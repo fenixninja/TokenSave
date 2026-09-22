@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Engineering Manager leading 14 engineers across 2 cross-functional teams. Regularly moved between frontend, cloud infra, and backend pipelines. Managed hiring, 1-on-1s, quarterly OKRs. Python used casually in past script automations.",
+    "name": "2. Engineering Manager / Generalista (Liderazgo de 14 devs & OKRs)",
+    "use_case": "composite_resume",
+    "example_index": 2
+  },
+  "expected_answers": {
+    "python_depth": [
+      20,
+      40,
+      30,
+      10,
+      0
+    ],
+    "team_leadership": [
+      0,
+      3,
+      12,
+      45,
+      40
+    ],
+    "system_design": [
+      10,
+      25,
+      40,
+      20,
+      5
+    ],
+    "generalist": [
+      0,
+      5,
+      25,
+      40,
+      30
+    ]
+  },
+  "expected_route": {
+    "routeKey": "archive_future",
+    "destination": "Archive for Future Opportunities",
+    "rationale": "Composite score (46.9%) does not meet senior requirement threshold."
+  }
+}

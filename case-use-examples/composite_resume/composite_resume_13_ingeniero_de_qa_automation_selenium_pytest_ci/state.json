@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "QA Automation Engineer with 5 years building end-to-end automated test suites using PyTest, Playwright, and Selenium. Integrated automated regression gates into GitHub Actions pipelines for daily production releases.",
+    "name": "13. Ingeniero de QA Automation (Selenium, PyTest, CI/CD)",
+    "use_case": "composite_resume",
+    "example_index": 13
+  },
+  "expected_answers": {
+    "python_depth": [
+      5,
+      15,
+      45,
+      30,
+      5
+    ],
+    "team_leadership": [
+      45,
+      35,
+      15,
+      5,
+      0
+    ],
+    "system_design": [
+      30,
+      45,
+      20,
+      5,
+      0
+    ],
+    "generalist": [
+      20,
+      40,
+      30,
+      10,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "archive_future",
+    "destination": "Archive for Future Opportunities",
+    "rationale": "Composite score (36.8%) does not meet senior requirement threshold."
+  }
+}

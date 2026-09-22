@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Backend software developer with 3 years building customer-facing web services with Python Flask and SQLAlchemy. Implemented caching with Redis and wrote automated end-to-end integration tests in Docker.",
+    "name": "11. Desarrollador Mid-Level Backend (3 años, APIs REST y Postgres)",
+    "use_case": "composite_resume",
+    "example_index": 11
+  },
+  "expected_answers": {
+    "python_depth": [
+      2,
+      10,
+      48,
+      35,
+      5
+    ],
+    "team_leadership": [
+      65,
+      25,
+      10,
+      0,
+      0
+    ],
+    "system_design": [
+      25,
+      45,
+      25,
+      5,
+      0
+    ],
+    "generalist": [
+      15,
+      35,
+      40,
+      10,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "archive_future",
+    "destination": "Archive for Future Opportunities",
+    "rationale": "Composite score (38.9%) does not meet senior requirement threshold."
+  }
+}

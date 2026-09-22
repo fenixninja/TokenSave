@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Systems optimization engineer specializing in Python interpreter internals, Cython bindings, GIL-free multithreading and low-level SIMD instructions. Reduced server CPU costs by 45% in real-time ad bidding engines.",
+    "name": "10. Especialista en Optimización y Rendimiento (C extensions, Cython)",
+    "use_case": "composite_resume",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "python_depth": [
+      0,
+      0,
+      2,
+      18,
+      80
+    ],
+    "team_leadership": [
+      50,
+      35,
+      12,
+      3,
+      0
+    ],
+    "system_design": [
+      10,
+      20,
+      35,
+      25,
+      10
+    ],
+    "generalist": [
+      35,
+      40,
+      15,
+      8,
+      2
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (62.5%); requires hiring manager assessment."
+  }
+}

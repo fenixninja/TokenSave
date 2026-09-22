@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Co-founder & CTO of an e-commerce startup. Wrote the initial MVP in Python Django, set up AWS infra, hired the first 8 engineers, negotiated vendor contracts, and managed user analytics pipelines from scratch.",
+    "name": "12. Fundador Técnico / CTO de Startup (Wore many hats, producto e infra)",
+    "use_case": "composite_resume",
+    "example_index": 12
+  },
+  "expected_answers": {
+    "python_depth": [
+      5,
+      15,
+      35,
+      35,
+      10
+    ],
+    "team_leadership": [
+      5,
+      15,
+      35,
+      35,
+      10
+    ],
+    "system_design": [
+      10,
+      25,
+      35,
+      25,
+      5
+    ],
+    "generalist": [
+      0,
+      2,
+      8,
+      30,
+      60
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (56.5%); requires hiring manager assessment."
+  }
+}

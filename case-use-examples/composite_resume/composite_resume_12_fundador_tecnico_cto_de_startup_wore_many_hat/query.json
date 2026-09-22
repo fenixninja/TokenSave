@@ -1,0 +1,56 @@
+{
+  "python_depth": {
+    "type": "score",
+    "instructions": "How much depth of Python programming and internal runtime expertise does this candidate demonstrate?",
+    "criteria": [
+      "No Python experience mentioned.",
+      "Mentioned superficially with no technical specifics.",
+      "Used in secondary projects with basic scripting capabilities.",
+      "Primary language across multiple production projects with solid framework proficiency.",
+      "Deep architectural mastery: interpreter internals, async I/O concurrency, memory profiling, and C-extensions."
+    ]
+  },
+  "team_leadership": {
+    "type": "score",
+    "instructions": "How extensive is the candidate's track record in technical leadership, management, and mentorship?",
+    "criteria": [
+      "No leadership or management experience indicated.",
+      "Informal mentoring of junior peers or technical documentation contributions.",
+      "Technical lead of small agile squads or project delivery initiatives.",
+      "Direct people management with hiring, 1-on-1 career growth, and performance evaluations.",
+      "Director-level organizational leadership managing multiple managers and multi-team departments."
+    ]
+  },
+  "system_design": {
+    "type": "score",
+    "instructions": "What level of competence does the candidate exhibit in large-scale distributed systems design?",
+    "criteria": [
+      "No architectural or systems design work mentioned.",
+      "Participated in design reviews and RFC discussions for existing architectures.",
+      "Designed decoupled components, microservices, and relational schema models.",
+      "End-to-end owner of high-scale, fault-tolerant distributed systems in production.",
+      "Enterprise chief architect designing multi-region, sub-millisecond consensus topologies."
+    ]
+  },
+  "generalist_adaptability": {
+    "type": "score",
+    "instructions": "How effectively does the candidate adapt across unfamiliar technical stacks, domains, and roles?",
+    "criteria": [
+      "Specialized exclusively within a single narrow niche.",
+      "Minor variations within the same technology family.",
+      "Proven delivery across several distinct backend and infrastructure stacks.",
+      "Broad polyglot who transitions seamlessly across full-stack, DevOps, and data pipelines.",
+      "Exceptional startup-grade adaptability: consistently masters unfamiliar domains to deliver critical outcomes."
+    ]
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "What hiring pipeline decision should be made based on the weighted composite profile?",
+    "criteria": {
+      "hire_immediate": "Fast-Track Offer / Executive Debrief - Exceptional composite fit (score >= 0.80).",
+      "onsite_loop": "Full Technical Onsite Interview Loop - Strong candidate meeting role bar (score 0.65 - 0.79).",
+      "team_pipeline_review": "Team Pipeline Review - Borderline candidate requiring hiring manager review (score 0.50 - 0.64).",
+      "archive_future": "Archive for Future Opportunities - Does not meet senior requirements at this time (score < 0.50)."
+    }
+  }
+}

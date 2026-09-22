@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Machine learning research scientist with PhD. 6 years writing deep learning models in PyTorch, modifying transformer attention layers, and evaluating loss landscapes. Published 4 top-tier conference papers.",
+    "name": "14. Investigador de IA / Machine Learning (PyTorch, Papers, Álgebra)",
+    "use_case": "composite_resume",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "python_depth": [
+      0,
+      5,
+      15,
+      40,
+      40
+    ],
+    "team_leadership": [
+      40,
+      35,
+      20,
+      5,
+      0
+    ],
+    "system_design": [
+      15,
+      25,
+      35,
+      20,
+      5
+    ],
+    "generalist": [
+      25,
+      40,
+      25,
+      10,
+      0
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (54.3%); requires hiring manager assessment."
+  }
+}

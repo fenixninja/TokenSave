@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Director of Engineering managing an organization of 4 engineering managers and 42 developers across 3 countries. Owned hiring budgets, compensation reviews, organizational restructuring and executive C-suite reporting.",
+    "name": "9. Director de Ingeniería (Gestión de múltiples managers y 40+ devs)",
+    "use_case": "composite_resume",
+    "example_index": 9
+  },
+  "expected_answers": {
+    "python_depth": [
+      35,
+      45,
+      15,
+      5,
+      0
+    ],
+    "team_leadership": [
+      0,
+      2,
+      8,
+      20,
+      70
+    ],
+    "system_design": [
+      15,
+      30,
+      35,
+      15,
+      5
+    ],
+    "generalist": [
+      5,
+      15,
+      30,
+      35,
+      15
+    ]
+  },
+  "expected_route": {
+    "routeKey": "archive_future",
+    "destination": "Archive for Future Opportunities",
+    "rationale": "Composite score (40.5%) does not meet senior requirement threshold."
+  }
+}

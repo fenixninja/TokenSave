@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Principal SRE with 11 years managing global Kubernetes clusters on AWS and GCP. Designed zero-downtime multi-region failover. Wrote Python CLI tools and automated chaos engineering drills. Mentored junior infra engineers.",
+    "name": "4. Principal Infrastructure / SRE (Kubernetes & Multi-Cloud)",
+    "use_case": "composite_resume",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "python_depth": [
+      5,
+      15,
+      40,
+      30,
+      10
+    ],
+    "team_leadership": [
+      10,
+      35,
+      35,
+      15,
+      5
+    ],
+    "system_design": [
+      0,
+      5,
+      15,
+      35,
+      45
+    ],
+    "generalist": [
+      5,
+      15,
+      30,
+      35,
+      15
+    ]
+  },
+  "expected_route": {
+    "routeKey": "team_pipeline_review",
+    "destination": "Team Pipeline Review",
+    "rationale": "Borderline score (64.8%); requires hiring manager assessment."
+  }
+}

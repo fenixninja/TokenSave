@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Freelance software consultant who delivered 12 distinct projects over 4 years across fintech, healthcare, and logistics. Rapidly adapts to unfamiliar client stacks, from legacy Python 2 to cloud-native serverless functions.",
+    "name": "15. Consultor de Software Freelance (Múltiples clientes y dominios)",
+    "use_case": "composite_resume",
+    "example_index": 15
+  },
+  "expected_answers": {
+    "python_depth": [
+      5,
+      15,
+      40,
+      35,
+      5
+    ],
+    "team_leadership": [
+      30,
+      40,
+      20,
+      10,
+      0
+    ],
+    "system_design": [
+      15,
+      30,
+      35,
+      15,
+      5
+    ],
+    "generalist": [
+      0,
+      5,
+      15,
+      40,
+      40
+    ]
+  },
+  "expected_route": {
+    "routeKey": "archive_future",
+    "destination": "Archive for Future Opportunities",
+    "rationale": "Composite score (49.1%) does not meet senior requirement threshold."
+  }
+}

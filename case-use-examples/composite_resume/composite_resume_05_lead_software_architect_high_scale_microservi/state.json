@@ -1,0 +1,43 @@
+{
+  "state": {
+    "text": "Chief Architect owning technical roadmap for core transactional ledger processing billions in payments. 12 years designing fault-tolerant low-latency systems combining C++ and Python. Published whitepapers on consensus protocols.",
+    "name": "5. Lead Software Architect (High-scale microservices, C++/Python)",
+    "use_case": "composite_resume",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "python_depth": [
+      2,
+      8,
+      20,
+      35,
+      35
+    ],
+    "team_leadership": [
+      15,
+      35,
+      30,
+      15,
+      5
+    ],
+    "system_design": [
+      0,
+      0,
+      5,
+      25,
+      70
+    ],
+    "generalist": [
+      10,
+      25,
+      35,
+      20,
+      10
+    ]
+  },
+  "expected_route": {
+    "routeKey": "onsite_loop",
+    "destination": "Full Technical Onsite Interview Loop",
+    "rationale": "Strong technical score (74.7%) qualifies candidate for onsite panels."
+  }
+}
