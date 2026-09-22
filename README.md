@@ -8,7 +8,7 @@
 *   **Frontend**: **JavaScript (Vanilla)**, **CSS3**, **HTML5**, 
 *   **Language Model**: **Qwen3 0.6B** (Local via WebGPU)
 *   **Browser Technology**: **WebGPU**, **WebNN**, **Service Workers**, **IndexedDB**
-
+![TokenSave Screen](tokenSave_screen.png)
 ### LAB 
 **TEST 1**
  - [x] Using qwen3 for mapping vectors 
