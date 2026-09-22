@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Each party agrees to hold Confidential Information in strict confidence for three (3) years from the date of disclosure, applying reasonable care.",
+    "name": "2. Acuerdo de Confidencialidad Bilateral Estándar a 3 Años",
+    "use_case": "legal_compliance",
+    "example_index": 2
+  },
+  "expected_answers": {
+    "clause_type": [
+      4,
+      88,
+      4,
+      4
+    ],
+    "liability_risk": [
+      95,
+      5,
+      0
+    ],
+    "missing_gdpr_clause": 0.05,
+    "requires_counsel_escalation": 0.05
+  },
+  "expected_route": {
+    "routeKey": "standard_approved_digital_sign",
+    "destination": "Standard Clause Approved",
+    "rationale": "Balanced contract terms approved for digital execution."
+  }
+}

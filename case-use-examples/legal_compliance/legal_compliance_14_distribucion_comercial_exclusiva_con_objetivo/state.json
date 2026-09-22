@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Distributor granted exclusive distribution rights for Spain subject to achieving annual minimum purchase target of 500,000 euros.",
+    "name": "14. Distribución Comercial Exclusiva con Objetivos de Venta",
+    "use_case": "legal_compliance",
+    "example_index": 14
+  },
+  "expected_answers": {
+    "clause_type": [
+      5,
+      5,
+      5,
+      85
+    ],
+    "liability_risk": [
+      80,
+      18,
+      2
+    ],
+    "missing_gdpr_clause": 0.02,
+    "requires_counsel_escalation": 0.1
+  },
+  "expected_route": {
+    "routeKey": "standard_approved_digital_sign",
+    "destination": "Standard Clause Approved",
+    "rationale": "Balanced contract terms approved for digital execution."
+  }
+}

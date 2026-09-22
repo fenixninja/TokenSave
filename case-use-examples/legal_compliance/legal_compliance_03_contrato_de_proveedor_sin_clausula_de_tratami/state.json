@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Customer uploads European consumer names and health records to Vendor's analytics server. Contract contains zero data processing clauses or security guarantees.",
+    "name": "3. Contrato de Proveedor sin Cláusula de Tratamiento de Datos (RGPD)",
+    "use_case": "legal_compliance",
+    "example_index": 3
+  },
+  "expected_answers": {
+    "clause_type": [
+      5,
+      5,
+      82,
+      8
+    ],
+    "liability_risk": [
+      5,
+      25,
+      70
+    ],
+    "missing_gdpr_clause": 0.98,
+    "requires_counsel_escalation": 0.92
+  },
+  "expected_route": {
+    "routeKey": "legal_counsel_veto",
+    "destination": "Contractual Veto / Counsel Escalation",
+    "rationale": "High legal liability (1.65/2.0) or mandatory counsel escalation required."
+  }
+}

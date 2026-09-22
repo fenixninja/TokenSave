@@ -1,0 +1,46 @@
+{
+  "clause_type": {
+    "type": "choice",
+    "instructions": "What commercial or legal subject matter does this contractual clause govern?",
+    "criteria": {
+      "limitation_of_liability": "Caps, disclaimers of consequential damages, and liability ceilings.",
+      "indemnification": "Defense obligations, third-party intellectual property claims, and hold-harmless terms.",
+      "data_protection_gdpr": "Data processing agreements, security standards, and GDPR Article 28 compliance.",
+      "standard_commercial": "Governing law, payment terms, severability, boilerplate, and notices."
+    }
+  },
+  "liability_risk": {
+    "type": "score",
+    "instructions": "What level of commercial and legal risk exposure does this clause introduce?",
+    "criteria": [
+      "Low risk: Market standard terms with balanced reciprocal liability caps.",
+      "Moderate risk: Asymmetric obligations requiring commercial stakeholder approval.",
+      "Unacceptable risk: Uncapped indemnification, unlawful liability waivers, or punitive liquidated damages."
+    ]
+  },
+  "missing_gdpr_clause": {
+    "type": "noul",
+    "instructions": "Does the agreement process personal data while omitting mandatory GDPR Art. 28 safeguards?",
+    "criteria": {
+      "true": "Involves processing personal data but omits required DPA terms, breach notification, or audit rights.",
+      "false": "Proper GDPR DPA provisions are present or agreement involves zero personal data processing."
+    }
+  },
+  "requires_counsel_escalation": {
+    "type": "noul",
+    "instructions": "Should this contract clause be escalated for formal general counsel legal opinion?",
+    "criteria": {
+      "true": "Contains non-standard redlines, uncapped liability, or cross-border regulatory exposure.",
+      "false": "Standard boilerplate conforming to pre-approved corporate procurement guidelines."
+    }
+  },
+  "final_destination_route": {
+    "type": "choice",
+    "instructions": "What legal workflow step should be assigned based on contract audit findings?",
+    "criteria": {
+      "legal_counsel_veto": "Contractual Veto / Counsel Escalation - Redline rejection sent to legal counsel for renegotiation.",
+      "mandatory_gdpr_amendment": "Mandatory DPA Addendum Insertion - Attach mandatory GDPR Article 28 data protection schedule.",
+      "standard_approved_digital_sign": "Standard Clause Approved - Cleared for digital signature via automated workflow."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Purchaser accepts commercial building 'as is' with explicit disclaimer of all warranties against structural defects or latent environmental contamination.",
+    "name": "15. Renuncia Previa a Reclamaciones por Vicios Ocultos",
+    "use_case": "legal_compliance",
+    "example_index": 15
+  },
+  "expected_answers": {
+    "clause_type": [
+      85,
+      5,
+      5,
+      5
+    ],
+    "liability_risk": [
+      2,
+      18,
+      80
+    ],
+    "missing_gdpr_clause": 0.02,
+    "requires_counsel_escalation": 0.9
+  },
+  "expected_route": {
+    "routeKey": "legal_counsel_veto",
+    "destination": "Contractual Veto / Counsel Escalation",
+    "rationale": "High legal liability (1.78/2.0) or mandatory counsel escalation required."
+  }
+}

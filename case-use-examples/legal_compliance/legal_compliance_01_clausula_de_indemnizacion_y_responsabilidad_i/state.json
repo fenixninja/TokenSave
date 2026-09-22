@@ -1,0 +1,26 @@
+{
+  "state": {
+    "text": "Provider shall defend, indemnify, and hold harmless Customer from any claims with unlimited aggregate liability, without any monetary cap.",
+    "name": "1. Cláusula de Indemnización y Responsabilidad Ilimitada (Alto Riesgo)"
+  },
+  "expected_answers": {
+    "clause_type": [
+      88,
+      4,
+      4,
+      4
+    ],
+    "liability_risk": [
+      2,
+      10,
+      88
+    ],
+    "missing_gdpr_clause": 0.05,
+    "requires_counsel_escalation": 0.95
+  },
+  "expected_route": {
+    "routeKey": "legal_counsel_veto",
+    "destination": "Contractual Veto / Counsel Escalation",
+    "rationale": "High legal liability (1.86/2.0) or mandatory counsel escalation required."
+  }
+}

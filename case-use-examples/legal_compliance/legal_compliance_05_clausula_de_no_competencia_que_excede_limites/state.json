@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Employee agrees not to work for any technology company worldwide in any capacity for five (5) years following termination without compensation.",
+    "name": "5. Cláusula de No Competencia que Excede Límites Legales (5 Años)",
+    "use_case": "legal_compliance",
+    "example_index": 5
+  },
+  "expected_answers": {
+    "clause_type": [
+      75,
+      10,
+      10,
+      5
+    ],
+    "liability_risk": [
+      5,
+      20,
+      75
+    ],
+    "missing_gdpr_clause": 0.02,
+    "requires_counsel_escalation": 0.88
+  },
+  "expected_route": {
+    "routeKey": "legal_counsel_veto",
+    "destination": "Contractual Veto / Counsel Escalation",
+    "rationale": "High legal liability (1.70/2.0) or mandatory counsel escalation required."
+  }
+}

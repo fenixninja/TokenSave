@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Contractor grants Company a non-exclusive, revocable license to utilize deliverables, while retaining full copyright ownership over underlying software core.",
+    "name": "4. Cesión de Propiedad Intelectual sin Exclusividad Clara",
+    "use_case": "legal_compliance",
+    "example_index": 4
+  },
+  "expected_answers": {
+    "clause_type": [
+      5,
+      5,
+      5,
+      85
+    ],
+    "liability_risk": [
+      10,
+      65,
+      25
+    ],
+    "missing_gdpr_clause": 0.02,
+    "requires_counsel_escalation": 0.7
+  },
+  "expected_route": {
+    "routeKey": "standard_approved_digital_sign",
+    "destination": "Standard Clause Approved",
+    "rationale": "Balanced contract terms approved for digital execution."
+  }
+}

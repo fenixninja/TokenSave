@@ -1,0 +1,28 @@
+{
+  "state": {
+    "text": "Vendor warrants 99.9% monthly service uptime. In the event of breach, Customer sole remedy shall be pro-rata service credits applied to future invoices.",
+    "name": "10. Contrato de Servicio SaaS con Compromiso SLA del 99.9%",
+    "use_case": "legal_compliance",
+    "example_index": 10
+  },
+  "expected_answers": {
+    "clause_type": [
+      5,
+      85,
+      5,
+      5
+    ],
+    "liability_risk": [
+      85,
+      15,
+      0
+    ],
+    "missing_gdpr_clause": 0.05,
+    "requires_counsel_escalation": 0.05
+  },
+  "expected_route": {
+    "routeKey": "standard_approved_digital_sign",
+    "destination": "Standard Clause Approved",
+    "rationale": "Balanced contract terms approved for digital execution."
+  }
+}
