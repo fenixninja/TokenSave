@@ -15,8 +15,8 @@ import { UMAP } from "https://cdn.jsdelivr.net/npm/umap-js@1.4.0/+esm";
 env.useBrowserCache = true;
 
 // Configurar carga 100% local desde el servidor web local (garantiza cero llamadas o cuotas a Hugging Face)
-env.allowLocalModels = true;
-env.allowRemoteModels = false;
+env.allowLocalModels = false;
+env.allowRemoteModels = true;
 env.localModelPath = "/models/";
 
 // Suppress benign ONNX runtime warnings
